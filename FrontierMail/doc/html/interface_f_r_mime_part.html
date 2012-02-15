@@ -1,0 +1,513 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>FrontierMail: クラス FRMimePart</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.7.4 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">FrontierMail</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>データ構造</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li><a href="classes.html"><span>データ構造索引</span></a></li>
+      <li><a href="functions.html"><span>データフィールド</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public メソッド</a> &#124;
+<a href="#pub-static-methods">Static Public メソッド</a> &#124;
+<a href="#properties">プロパティ</a>  </div>
+  <div class="headertitle">
+<div class="title">クラス FRMimePart</div>  </div>
+</div>
+<div class="contents">
+<!-- doxytag: class="FRMimePart" -->
+<p>MIMEパーツデータ。  
+ <a href="interface_f_r_mime_part.html#details">[詳細]</a></p>
+
+<p><code>#import &lt;<a class="el" href="_f_r_mime_part_8h_source.html">FRMimePart.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_f_r_mime_part.html#abec4c716c332d3f870360e7e9b35f2fa">setContentTypeByMimeType:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">指定されたMIME種別に応じたContent-Typeを設定する。  <a href="#abec4c716c332d3f870360e7e9b35f2fa"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(NSString *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_f_r_mime_part.html#a7834eb1fdf5562c86d41e8969eedcd9e">contentType</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">設定されているContent-Type文字列を取得する。  <a href="#a7834eb1fdf5562c86d41e8969eedcd9e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_f_r_mime_part.html#a471dbbe300b6b05597ca9d2741f61684">addMimePart:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">MIMEパーツを追加する。  <a href="#a471dbbe300b6b05597ca9d2741f61684"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(NSEnumerator *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_f_r_mime_part.html#abd7c69579c0440cb1274eb7d99cacf90">enumeratorMimeParts</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">MIMEパーツ一覧へアクセスするための列挙子を取得する。  <a href="#abd7c69579c0440cb1274eb7d99cacf90"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(NSUInteger)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_f_r_mime_part.html#a042471cf6e969e24bee7172bda6306ae">mimePartsCount</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">MIMEパーツ数を取得する。  <a href="#a042471cf6e969e24bee7172bda6306ae"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_f_r_mime_part.html#a5685fe8ac34047071d12f49b5f38bccb">setText:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">指定されたテキストをプレーンテキストとして設定する。  <a href="#a5685fe8ac34047071d12f49b5f38bccb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_f_r_mime_part.html#a555ede99e6c6b3758384a563ffbf03f1">setText:charset:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">指定されたテキストをプレーンテキストとして設定する。  <a href="#a555ede99e6c6b3758384a563ffbf03f1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_f_r_mime_part.html#a93910467ebca858866d7c9af1c2c4d75">setHtmlText:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">指定されたテキストをHTMLテキストとして設定する。  <a href="#a93910467ebca858866d7c9af1c2c4d75"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_f_r_mime_part.html#abe463d369ca95c447616052adbb2ccfb">setHtmlText:charset:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">指定されたテキストをHTMLテキストとして設定する。  <a href="#abe463d369ca95c447616052adbb2ccfb"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+Static Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_f_r_mime_part.html">FRMimePart</a> *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_f_r_mime_part.html#a40ede3761cff0a432e35255599976fa1">mimePart</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">MIMEパーツデータを一時インスタンスとして初期化する。  <a href="#a40ede3761cff0a432e35255599976fa1"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="properties"></a>
+プロパティ</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">NSData *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_f_r_mime_part.html#a28e48bd1bacbd0303523a42e2eebb023">content</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">コンテンツデータ  <a href="#a28e48bd1bacbd0303523a42e2eebb023"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_f_r_mime_part.html#a9ead77de60fa8c612694ed031c6b44b6">contentType</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">コンテンツタイプ  <a href="#a9ead77de60fa8c612694ed031c6b44b6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_f_r_mime_part.html#a9818faf3f09ce57cbb7cc3b586a9bb47">charset</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">利用する文字コード  <a href="#a9818faf3f09ce57cbb7cc3b586a9bb47"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_f_r_mime_part.html#a52ddde1599c29445b12b8d589928b6dd">contentId</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">コンテンツID  <a href="#a52ddde1599c29445b12b8d589928b6dd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_f_r_mime_part.html#a890bdc0473e0889f4281fa91ec72dc3e">description</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">説明  <a href="#a890bdc0473e0889f4281fa91ec72dc3e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_f_r_mime_part.html#a28b1354db926de3d6ab2b357ea74ebe4">fileName</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイル名  <a href="#a28b1354db926de3d6ab2b357ea74ebe4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_f_r_mime_part_8h.html#ae22da5dde30e2b5b9cbb69bfc22a1b1c">FRMimeDispositionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_f_r_mime_part.html#a951cc9470d577d31c5bdc9fa5d7ff62b">dispositionType</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Content-Disposition動作種別  <a href="#a951cc9470d577d31c5bdc9fa5d7ff62b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_f_r_mime_part_8h.html#a93dfbeab4659ecc3c8a156694a0e8adf">FRMimeTransferEncoding</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_f_r_mime_part.html#a8966c73d820699cb90c8fb8a304b6a68">transferEncoding</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Content-Transfer-Encoding種別  <a href="#a8966c73d820699cb90c8fb8a304b6a68"></a><br/></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>説明</h2>
+<div class="textblock"><p>MIMEパーツデータ。 </p>
+<dl class="author"><dt><b>作者:</b></dt><dd>Kou </dd></dl>
+</div><hr/><h2>関数</h2>
+<a class="anchor" id="a471dbbe300b6b05597ca9d2741f61684"></a><!-- doxytag: member="FRMimePart::addMimePart:" ref="a471dbbe300b6b05597ca9d2741f61684" args="(FRMimePart *mimePart)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) addMimePart: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_f_r_mime_part.html">FRMimePart</a>*)&#160;</td>
+          <td class="paramname"><em>mimePart</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>MIMEパーツを追加する。 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mimePart</td><td>追加するMIMEパーツ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7834eb1fdf5562c86d41e8969eedcd9e"></a><!-- doxytag: member="FRMimePart::contentType" ref="a7834eb1fdf5562c86d41e8969eedcd9e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSString*) contentType </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>設定されているContent-Type文字列を取得する。 </p>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>Content-Type文字列 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abd7c69579c0440cb1274eb7d99cacf90"></a><!-- doxytag: member="FRMimePart::enumeratorMimeParts" ref="abd7c69579c0440cb1274eb7d99cacf90" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSEnumerator *) enumeratorMimeParts </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>MIMEパーツ一覧へアクセスするための列挙子を取得する。 </p>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>MIMEパーツ一覧へアクセスするための列挙子 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a40ede3761cff0a432e35255599976fa1"></a><!-- doxytag: member="FRMimePart::mimePart" ref="a40ede3761cff0a432e35255599976fa1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (<a class="el" href="interface_f_r_mime_part.html">FRMimePart</a> *) mimePart </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>MIMEパーツデータを一時インスタンスとして初期化する。 </p>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>作成した一時インスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a042471cf6e969e24bee7172bda6306ae"></a><!-- doxytag: member="FRMimePart::mimePartsCount" ref="a042471cf6e969e24bee7172bda6306ae" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSUInteger) mimePartsCount </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>MIMEパーツ数を取得する。 </p>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>MIMEパーツ数 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abec4c716c332d3f870360e7e9b35f2fa"></a><!-- doxytag: member="FRMimePart::setContentTypeByMimeType:" ref="abec4c716c332d3f870360e7e9b35f2fa" args="(FRMimeType mimeType)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setContentTypeByMimeType: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961">FRMimeType</a>)&#160;</td>
+          <td class="paramname"><em>mimeType</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>指定されたMIME種別に応じたContent-Typeを設定する。 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mimeType</td><td>設定するMIME種別 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a93910467ebca858866d7c9af1c2c4d75"></a><!-- doxytag: member="FRMimePart::setHtmlText:" ref="a93910467ebca858866d7c9af1c2c4d75" args="(NSString *text)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setHtmlText: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>text</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>指定されたテキストをHTMLテキストとして設定する。 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>設定するテキストデータ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="abe463d369ca95c447616052adbb2ccfb"></a><!-- doxytag: member="FRMimePart::setHtmlText:charset:" ref="abe463d369ca95c447616052adbb2ccfb" args="(NSString *text,[charset] NSString *charset)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setHtmlText: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>text</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">charset:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>charset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>指定されたテキストをHTMLテキストとして設定する。 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>設定するテキストデータ </td></tr>
+    <tr><td class="paramname">charset</td><td>テキストの文字コード </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5685fe8ac34047071d12f49b5f38bccb"></a><!-- doxytag: member="FRMimePart::setText:" ref="a5685fe8ac34047071d12f49b5f38bccb" args="(NSString *text)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setText: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>text</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>指定されたテキストをプレーンテキストとして設定する。 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>設定するテキストデータ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a555ede99e6c6b3758384a563ffbf03f1"></a><!-- doxytag: member="FRMimePart::setText:charset:" ref="a555ede99e6c6b3758384a563ffbf03f1" args="(NSString *text,[charset] NSString *charset)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setText: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>text</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">charset:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>charset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>指定されたテキストをプレーンテキストとして設定する。 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>設定するテキストデータ </td></tr>
+    <tr><td class="paramname">charset</td><td>テキストの文字コード </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>プロパティ</h2>
+<a class="anchor" id="a9818faf3f09ce57cbb7cc3b586a9bb47"></a><!-- doxytag: member="FRMimePart::charset" ref="a9818faf3f09ce57cbb7cc3b586a9bb47" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSString*) charset<code> [read, write, copy]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>利用する文字コード </p>
+
+</div>
+</div>
+<a class="anchor" id="a28e48bd1bacbd0303523a42e2eebb023"></a><!-- doxytag: member="FRMimePart::content" ref="a28e48bd1bacbd0303523a42e2eebb023" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSData*) content<code> [read, write, retain]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>コンテンツデータ </p>
+
+</div>
+</div>
+<a class="anchor" id="a52ddde1599c29445b12b8d589928b6dd"></a><!-- doxytag: member="FRMimePart::contentId" ref="a52ddde1599c29445b12b8d589928b6dd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSString*) contentId<code> [read, write, copy]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>コンテンツID </p>
+
+</div>
+</div>
+<a class="anchor" id="a9ead77de60fa8c612694ed031c6b44b6"></a><!-- doxytag: member="FRMimePart::contentType" ref="a9ead77de60fa8c612694ed031c6b44b6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSString*) contentType<code> [read, write, copy]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>コンテンツタイプ </p>
+
+</div>
+</div>
+<a class="anchor" id="a890bdc0473e0889f4281fa91ec72dc3e"></a><!-- doxytag: member="FRMimePart::description" ref="a890bdc0473e0889f4281fa91ec72dc3e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSString*) description<code> [read, write, copy]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>説明 </p>
+
+</div>
+</div>
+<a class="anchor" id="a951cc9470d577d31c5bdc9fa5d7ff62b"></a><!-- doxytag: member="FRMimePart::dispositionType" ref="a951cc9470d577d31c5bdc9fa5d7ff62b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="_f_r_mime_part_8h.html#ae22da5dde30e2b5b9cbb69bfc22a1b1c">FRMimeDispositionType</a>) dispositionType<code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Content-Disposition動作種別 </p>
+
+</div>
+</div>
+<a class="anchor" id="a28b1354db926de3d6ab2b357ea74ebe4"></a><!-- doxytag: member="FRMimePart::fileName" ref="a28b1354db926de3d6ab2b357ea74ebe4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSString*) fileName<code> [read, write, copy]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>ファイル名 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8966c73d820699cb90c8fb8a304b6a68"></a><!-- doxytag: member="FRMimePart::transferEncoding" ref="a8966c73d820699cb90c8fb8a304b6a68" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="_f_r_mime_part_8h.html#a93dfbeab4659ecc3c8a156694a0e8adf">FRMimeTransferEncoding</a>) transferEncoding<code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Content-Transfer-Encoding種別 </p>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>Classes/<a class="el" href="_f_r_mime_part_8h_source.html">FRMimePart.h</a></li>
+<li>Classes/<a class="el" href="_f_r_mime_part_8m.html">FRMimePart.m</a></li>
+</ul>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>データ構造</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>プロパティ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>FrontierMailに対してTue Jul 26 2011 03:18:34に生成されました。&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
+</body>
+</html>

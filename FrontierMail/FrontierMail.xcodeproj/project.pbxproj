@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		93AD3B9413D947EE00FCBFB3 /* FrontierMail-Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 93AD3B9513D947EE00FCBFB3 /* Build configuration list for PBXAggregateTarget "FrontierMail-Universal" */;
+			buildPhases = (
+				93AD3B9E13D9484E00FCBFB3 /* Build and copy files */,
+			);
+			dependencies = (
+			);
+			name = "FrontierMail-Universal";
+			productName = "FrontierMail-Universal";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		9383A58A1451315000FFA134 /* FRSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 9383A5881451315000FFA134 /* FRSession.h */; };
+		9383A58B1451315000FFA134 /* FRSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 9383A5891451315000FFA134 /* FRSession.m */; };
+		93AD3B4B13D9461000FCBFB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AD3B4A13D9461000FCBFB3 /* Foundation.framework */; };
+		93AD3B5613D9461000FCBFB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AD3B5513D9461000FCBFB3 /* UIKit.framework */; };
+		93AD3B5713D9461000FCBFB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AD3B4A13D9461000FCBFB3 /* Foundation.framework */; };
+		93AD3B5913D9461000FCBFB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AD3B5813D9461000FCBFB3 /* CoreGraphics.framework */; };
+		93AD3B5C13D9461000FCBFB3 /* libFrontierMail.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AD3B4713D9461000FCBFB3 /* libFrontierMail.a */; };
+		93AD3B6213D9461000FCBFB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93AD3B6013D9461000FCBFB3 /* InfoPlist.strings */; };
+		93AD3B6513D9461000FCBFB3 /* FrontierMailTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 93AD3B6413D9461000FCBFB3 /* FrontierMailTests.h */; };
+		93AD3B6713D9461000FCBFB3 /* FrontierMailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AD3B6613D9461000FCBFB3 /* FrontierMailTests.m */; };
+		93AD3B7F13D9468200FCBFB3 /* FRMailAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 93AD3B7213D9468200FCBFB3 /* FRMailAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93AD3B8013D9468200FCBFB3 /* FRMailAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AD3B7313D9468200FCBFB3 /* FRMailAddress.m */; };
+		93AD3B8113D9468200FCBFB3 /* FRMailDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 93AD3B7413D9468200FCBFB3 /* FRMailDefine.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		93AD3B8213D9468200FCBFB3 /* FRMailMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 93AD3B7513D9468200FCBFB3 /* FRMailMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93AD3B8313D9468200FCBFB3 /* FRMailMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AD3B7613D9468200FCBFB3 /* FRMailMessage.m */; };
+		93AD3B8413D9468200FCBFB3 /* FRMailType.h in Headers */ = {isa = PBXBuildFile; fileRef = 93AD3B7713D9468200FCBFB3 /* FRMailType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93AD3B8513D9468200FCBFB3 /* FRMailUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 93AD3B7813D9468200FCBFB3 /* FRMailUtils.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		93AD3B8613D9468200FCBFB3 /* FRMailUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AD3B7913D9468200FCBFB3 /* FRMailUtils.m */; };
+		93AD3B8713D9468200FCBFB3 /* FRMimePart.h in Headers */ = {isa = PBXBuildFile; fileRef = 93AD3B7A13D9468200FCBFB3 /* FRMimePart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93AD3B8813D9468200FCBFB3 /* FRMimePart.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AD3B7B13D9468200FCBFB3 /* FRMimePart.m */; };
+		93AD3B8913D9468200FCBFB3 /* FRSMTPSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 93AD3B7C13D9468200FCBFB3 /* FRSMTPSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93AD3B8A13D9468200FCBFB3 /* FRSMTPSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AD3B7D13D9468200FCBFB3 /* FRSMTPSession.m */; };
+		93AD3B8B13D9468200FCBFB3 /* FrontierMail.h in Headers */ = {isa = PBXBuildFile; fileRef = 93AD3B7E13D9468200FCBFB3 /* FrontierMail.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93AD3B9013D9470E00FCBFB3 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 93AD3B8E13D9470E00FCBFB3 /* base64.c */; };
+		93AD3B9113D9470E00FCBFB3 /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 93AD3B8F13D9470E00FCBFB3 /* base64.h */; };
+		C756665813DDCD6F0066E069 /* libetpan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C756665713DDCD6F0066E069 /* libetpan.framework */; };
+		C756665A13DDCDA00066E069 /* libetpan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C756665913DDCDA00066E069 /* libetpan.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93AD3B5A13D9461000FCBFB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93AD3B3E13D9461000FCBFB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93AD3B4613D9461000FCBFB3;
+			remoteInfo = FrontierMail;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9383A5881451315000FFA134 /* FRSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRSession.h; sourceTree = "<group>"; };
+		9383A5891451315000FFA134 /* FRSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRSession.m; sourceTree = "<group>"; };
+		93AD3B4713D9461000FCBFB3 /* libFrontierMail.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFrontierMail.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		93AD3B4A13D9461000FCBFB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		93AD3B4E13D9461000FCBFB3 /* FrontierMail-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FrontierMail-Prefix.pch"; sourceTree = "<group>"; };
+		93AD3B5413D9461000FCBFB3 /* FrontierMailTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrontierMailTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93AD3B5513D9461000FCBFB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		93AD3B5813D9461000FCBFB3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		93AD3B5F13D9461000FCBFB3 /* FrontierMailTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FrontierMailTests-Info.plist"; sourceTree = "<group>"; };
+		93AD3B6113D9461000FCBFB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		93AD3B6313D9461000FCBFB3 /* FrontierMailTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FrontierMailTests-Prefix.pch"; sourceTree = "<group>"; };
+		93AD3B6413D9461000FCBFB3 /* FrontierMailTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrontierMailTests.h; sourceTree = "<group>"; };
+		93AD3B6613D9461000FCBFB3 /* FrontierMailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = FrontierMailTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		93AD3B7213D9468200FCBFB3 /* FRMailAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = FRMailAddress.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		93AD3B7313D9468200FCBFB3 /* FRMailAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = FRMailAddress.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		93AD3B7413D9468200FCBFB3 /* FRMailDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = FRMailDefine.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		93AD3B7513D9468200FCBFB3 /* FRMailMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = FRMailMessage.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		93AD3B7613D9468200FCBFB3 /* FRMailMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = FRMailMessage.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		93AD3B7713D9468200FCBFB3 /* FRMailType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = FRMailType.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		93AD3B7813D9468200FCBFB3 /* FRMailUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = FRMailUtils.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		93AD3B7913D9468200FCBFB3 /* FRMailUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = FRMailUtils.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		93AD3B7A13D9468200FCBFB3 /* FRMimePart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = FRMimePart.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		93AD3B7B13D9468200FCBFB3 /* FRMimePart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = FRMimePart.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		93AD3B7C13D9468200FCBFB3 /* FRSMTPSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRSMTPSession.h; sourceTree = "<group>"; };
+		93AD3B7D13D9468200FCBFB3 /* FRSMTPSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRSMTPSession.m; sourceTree = "<group>"; };
+		93AD3B7E13D9468200FCBFB3 /* FrontierMail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = FrontierMail.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		93AD3B8E13D9470E00FCBFB3 /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base64.c; sourceTree = "<group>"; };
+		93AD3B8F13D9470E00FCBFB3 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		93AD3BA013D948BE00FCBFB3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C756665713DDCD6F0066E069 /* libetpan.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libetpan.framework; path = "../libEtPan/build-mac/build/Debug-framework/libetpan.framework"; sourceTree = "<group>"; };
+		C756665913DDCDA00066E069 /* libetpan.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libetpan.framework; path = "../../libEtPan/build-mac/build/Debug-framework/libetpan.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93AD3B4413D9461000FCBFB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C756665813DDCD6F0066E069 /* libetpan.framework in Frameworks */,
+				93AD3B4B13D9461000FCBFB3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93AD3B5013D9461000FCBFB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C756665A13DDCDA00066E069 /* libetpan.framework in Frameworks */,
+				93AD3B5613D9461000FCBFB3 /* UIKit.framework in Frameworks */,
+				93AD3B5713D9461000FCBFB3 /* Foundation.framework in Frameworks */,
+				93AD3B5913D9461000FCBFB3 /* CoreGraphics.framework in Frameworks */,
+				93AD3B5C13D9461000FCBFB3 /* libFrontierMail.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93AD3B3C13D9460F00FCBFB3 = {
+			isa = PBXGroup;
+			children = (
+				93AD3B9F13D9488900FCBFB3 /* Resources */,
+				93AD3B4C13D9461000FCBFB3 /* FrontierMail */,
+				93AD3B5D13D9461000FCBFB3 /* FrontierMailTests */,
+				93AD3B4913D9461000FCBFB3 /* Frameworks */,
+				93AD3B4813D9461000FCBFB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93AD3B4813D9461000FCBFB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93AD3B4713D9461000FCBFB3 /* libFrontierMail.a */,
+				93AD3B5413D9461000FCBFB3 /* FrontierMailTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93AD3B4913D9461000FCBFB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C756665713DDCD6F0066E069 /* libetpan.framework */,
+				93AD3B4A13D9461000FCBFB3 /* Foundation.framework */,
+				93AD3B5513D9461000FCBFB3 /* UIKit.framework */,
+				93AD3B5813D9461000FCBFB3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93AD3B4C13D9461000FCBFB3 /* FrontierMail */ = {
+			isa = PBXGroup;
+			children = (
+				93AD3B7013D9462D00FCBFB3 /* Library */,
+				93AD3B7113D9464700FCBFB3 /* Classes */,
+				93AD3B4D13D9461000FCBFB3 /* Supporting Files */,
+			);
+			path = FrontierMail;
+			sourceTree = "<group>";
+		};
+		93AD3B4D13D9461000FCBFB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93AD3B4E13D9461000FCBFB3 /* FrontierMail-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93AD3B5D13D9461000FCBFB3 /* FrontierMailTests */ = {
+			isa = PBXGroup;
+			children = (
+				C756665913DDCDA00066E069 /* libetpan.framework */,
+				93AD3B6413D9461000FCBFB3 /* FrontierMailTests.h */,
+				93AD3B6613D9461000FCBFB3 /* FrontierMailTests.m */,
+				93AD3B5E13D9461000FCBFB3 /* Supporting Files */,
+			);
+			path = FrontierMailTests;
+			sourceTree = "<group>";
+		};
+		93AD3B5E13D9461000FCBFB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93AD3B5F13D9461000FCBFB3 /* FrontierMailTests-Info.plist */,
+				93AD3B6013D9461000FCBFB3 /* InfoPlist.strings */,
+				93AD3B6313D9461000FCBFB3 /* FrontierMailTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93AD3B7013D9462D00FCBFB3 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				93AD3B8E13D9470E00FCBFB3 /* base64.c */,
+				93AD3B8F13D9470E00FCBFB3 /* base64.h */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		93AD3B7113D9464700FCBFB3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				93AD3B7213D9468200FCBFB3 /* FRMailAddress.h */,
+				93AD3B7313D9468200FCBFB3 /* FRMailAddress.m */,
+				93AD3B7413D9468200FCBFB3 /* FRMailDefine.h */,
+				93AD3B7513D9468200FCBFB3 /* FRMailMessage.h */,
+				93AD3B7613D9468200FCBFB3 /* FRMailMessage.m */,
+				93AD3B7713D9468200FCBFB3 /* FRMailType.h */,
+				93AD3B7813D9468200FCBFB3 /* FRMailUtils.h */,
+				93AD3B7913D9468200FCBFB3 /* FRMailUtils.m */,
+				93AD3B7A13D9468200FCBFB3 /* FRMimePart.h */,
+				93AD3B7B13D9468200FCBFB3 /* FRMimePart.m */,
+				93AD3B7C13D9468200FCBFB3 /* FRSMTPSession.h */,
+				93AD3B7D13D9468200FCBFB3 /* FRSMTPSession.m */,
+				9383A5881451315000FFA134 /* FRSession.h */,
+				9383A5891451315000FFA134 /* FRSession.m */,
+				93AD3B7E13D9468200FCBFB3 /* FrontierMail.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		93AD3B9F13D9488900FCBFB3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				93AD3BA013D948BE00FCBFB3 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		93AD3B4513D9461000FCBFB3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93AD3B7F13D9468200FCBFB3 /* FRMailAddress.h in Headers */,
+				93AD3B8213D9468200FCBFB3 /* FRMailMessage.h in Headers */,
+				93AD3B8413D9468200FCBFB3 /* FRMailType.h in Headers */,
+				93AD3B8713D9468200FCBFB3 /* FRMimePart.h in Headers */,
+				93AD3B8913D9468200FCBFB3 /* FRSMTPSession.h in Headers */,
+				93AD3B8B13D9468200FCBFB3 /* FrontierMail.h in Headers */,
+				93AD3B8113D9468200FCBFB3 /* FRMailDefine.h in Headers */,
+				93AD3B8513D9468200FCBFB3 /* FRMailUtils.h in Headers */,
+				93AD3B9113D9470E00FCBFB3 /* base64.h in Headers */,
+				9383A58A1451315000FFA134 /* FRSession.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		93AD3B4613D9461000FCBFB3 /* FrontierMail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93AD3B6A13D9461000FCBFB3 /* Build configuration list for PBXNativeTarget "FrontierMail" */;
+			buildPhases = (
+				93AD3B4313D9461000FCBFB3 /* Sources */,
+				93AD3B4413D9461000FCBFB3 /* Frameworks */,
+				93AD3B4513D9461000FCBFB3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FrontierMail;
+			productName = FrontierMail;
+			productReference = 93AD3B4713D9461000FCBFB3 /* libFrontierMail.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		93AD3B5313D9461000FCBFB3 /* FrontierMailTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93AD3B6D13D9461000FCBFB3 /* Build configuration list for PBXNativeTarget "FrontierMailTests" */;
+			buildPhases = (
+				93AD3B4F13D9461000FCBFB3 /* Sources */,
+				93AD3B5013D9461000FCBFB3 /* Frameworks */,
+				93AD3B5113D9461000FCBFB3 /* Resources */,
+				93AD3B5213D9461000FCBFB3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93AD3B5B13D9461000FCBFB3 /* PBXTargetDependency */,
+			);
+			name = FrontierMailTests;
+			productName = FrontierMailTests;
+			productReference = 93AD3B5413D9461000FCBFB3 /* FrontierMailTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93AD3B3E13D9461000FCBFB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "The Frontier Project";
+			};
+			buildConfigurationList = 93AD3B4113D9461000FCBFB3 /* Build configuration list for PBXProject "FrontierMail" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 93AD3B3C13D9460F00FCBFB3;
+			productRefGroup = 93AD3B4813D9461000FCBFB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93AD3B4613D9461000FCBFB3 /* FrontierMail */,
+				93AD3B5313D9461000FCBFB3 /* FrontierMailTests */,
+				93AD3B9413D947EE00FCBFB3 /* FrontierMail-Universal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93AD3B5113D9461000FCBFB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93AD3B6213D9461000FCBFB3 /* InfoPlist.strings in Resources */,
+				93AD3B6513D9461000FCBFB3 /* FrontierMailTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		93AD3B5213D9461000FCBFB3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		93AD3B9E13D9484E00FCBFB3 /* Build and copy files */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build and copy files";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Environment Variables\nFRAMEWORK_NAME=${PROJECT_NAME}\nFRAMEWORK_VERSION=A\nFRAMEWORK_VERSION_NUMBER=1.0\nFRAMEWORK_BUILD_PATH=\"${SRCROOT}/build/${CONFIGURATION}-framework\"\nFRAMEWORK_DIR=\"${FRAMEWORK_BUILD_PATH}/${FRAMEWORK_NAME}.framework\"\nFRAMEWORK_PACKAGE_NAME=\"${FRAMEWORK_NAME}.${FRAMEWORK_VERSION_NUMBER}.zip\"\n\n# Clean directories\nrm -rf \"${FRAMEWORK_BUILD_PATH}\"\n\n# Build simulator and device binaries.\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphonesimulator${IPHONEOS_DEPLOYMENT_TARGET} -target \"FrontierMail\" -configuration ${CONFIGURATION} clean build\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphoneos${IPHONEOS_DEPLOYMENT_TARGET} -target \"FrontierMail\" -configuration ${CONFIGURATION} clean build\n\n# create framework directories.\nmkdir -p ${FRAMEWORK_DIR}\nmkdir -p ${FRAMEWORK_DIR}/Versions\nmkdir -p ${FRAMEWORK_DIR}/Versions/${FRAMEWORK_VERSION}\nmkdir -p ${FRAMEWORK_DIR}/Versions/${FRAMEWORK_VERSION}/Resources\nmkdir -p ${FRAMEWORK_DIR}/Versions/${FRAMEWORK_VERSION}/Headers\n\n# create symlinks\nln -s ${FRAMEWORK_DIR}/Versions/${FRAMEWORK_VERSION} ${FRAMEWORK_DIR}/Versions/Current\nln -s ${FRAMEWORK_DIR}/Versions/Current/Headers ${FRAMEWORK_DIR}/Headers\nln -s ${FRAMEWORK_DIR}/Versions/Current/Resources ${FRAMEWORK_DIR}/Resources\nln -s ${FRAMEWORK_DIR}/Versions/Current/${FRAMEWORK_NAME} ${FRAMEWORK_DIR}/${FRAMEWORK_NAME}\n\n# create the universal library\nlipo ${SRCROOT}/build/${CONFIGURATION}-iphoneos/lib${FRAMEWORK_NAME}.a ${SRCROOT}/build/${CONFIGURATION}-iphonesimulator/lib${FRAMEWORK_NAME}.a -create -output \"${FRAMEWORK_DIR}/Versions/Current/${FRAMEWORK_NAME}\"\n\n# copy files\ncp ${SRCROOT}/build/${CONFIGURATION}-iphoneos/Headers/*.h ${FRAMEWORK_DIR}/Headers/\ncp Info.plist ${FRAMEWORK_DIR}/Resources\n                                                      \n# zip\ncd ${FRAMEWORK_BUILD_PATH}\nzip -ry ${FRAMEWORK_PACKAGE_NAME} $(basename $FRAMEWORK_DIR)\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93AD3B4313D9461000FCBFB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93AD3B8013D9468200FCBFB3 /* FRMailAddress.m in Sources */,
+				93AD3B8313D9468200FCBFB3 /* FRMailMessage.m in Sources */,
+				93AD3B8613D9468200FCBFB3 /* FRMailUtils.m in Sources */,
+				93AD3B8813D9468200FCBFB3 /* FRMimePart.m in Sources */,
+				93AD3B8A13D9468200FCBFB3 /* FRSMTPSession.m in Sources */,
+				93AD3B9013D9470E00FCBFB3 /* base64.c in Sources */,
+				9383A58B1451315000FFA134 /* FRSession.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93AD3B4F13D9461000FCBFB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93AD3B6713D9461000FCBFB3 /* FrontierMailTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93AD3B5B13D9461000FCBFB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93AD3B4613D9461000FCBFB3 /* FrontierMail */;
+			targetProxy = 93AD3B5A13D9461000FCBFB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		93AD3B6013D9461000FCBFB3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93AD3B6113D9461000FCBFB3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93AD3B6813D9461000FCBFB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		93AD3B6913D9461000FCBFB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		93AD3B6B13D9461000FCBFB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/FrontierMail.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../miyabichan-libEtPan-78e53a6/build-mac/build/Debug-framework\"",
+					"\"$(SRCROOT)/../libEtPan/build-mac/build/Debug-framework\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FrontierMail/FrontierMail-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /Headers;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Debug;
+		};
+		93AD3B6C13D9461000FCBFB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/FrontierMail.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../miyabichan-libEtPan-78e53a6/build-mac/build/Debug-framework\"",
+					"\"$(SRCROOT)/../libEtPan/build-mac/build/Debug-framework\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FrontierMail/FrontierMail-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /Headers;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Release;
+		};
+		93AD3B6E13D9461000FCBFB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)/../miyabichan-libEtPan-78e53a6/build-mac/build/Debug-framework\"",
+					"\"$(SRCROOT)/../libEtPan/build-mac/build/Debug-framework\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FrontierMailTests/FrontierMailTests-Prefix.pch";
+				INFOPLIST_FILE = "FrontierMailTests/FrontierMailTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		93AD3B6F13D9461000FCBFB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)/../miyabichan-libEtPan-78e53a6/build-mac/build/Debug-framework\"",
+					"\"$(SRCROOT)/../libEtPan/build-mac/build/Debug-framework\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FrontierMailTests/FrontierMailTests-Prefix.pch";
+				INFOPLIST_FILE = "FrontierMailTests/FrontierMailTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		93AD3B9613D947EE00FCBFB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		93AD3B9713D947EE00FCBFB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93AD3B4113D9461000FCBFB3 /* Build configuration list for PBXProject "FrontierMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93AD3B6813D9461000FCBFB3 /* Debug */,
+				93AD3B6913D9461000FCBFB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93AD3B6A13D9461000FCBFB3 /* Build configuration list for PBXNativeTarget "FrontierMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93AD3B6B13D9461000FCBFB3 /* Debug */,
+				93AD3B6C13D9461000FCBFB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93AD3B6D13D9461000FCBFB3 /* Build configuration list for PBXNativeTarget "FrontierMailTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93AD3B6E13D9461000FCBFB3 /* Debug */,
+				93AD3B6F13D9461000FCBFB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93AD3B9513D947EE00FCBFB3 /* Build configuration list for PBXAggregateTarget "FrontierMail-Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93AD3B9613D947EE00FCBFB3 /* Debug */,
+				93AD3B9713D947EE00FCBFB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93AD3B3E13D9461000FCBFB3 /* Project object */;
+}

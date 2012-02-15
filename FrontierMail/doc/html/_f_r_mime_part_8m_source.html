@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>FrontierMail: Classes/FRMimePart.m ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.7.4 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">FrontierMail</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>グローバル</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">Classes/FRMimePart.m</div>  </div>
+</div>
+<div class="contents">
+<a href="_f_r_mime_part_8m.html">説明を見る。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
+<a name="l00002"></a>00002 <span class="comment">//  FRMimePart.m</span>
+<a name="l00003"></a>00003 <span class="comment">//  FrontierMail</span>
+<a name="l00004"></a>00004 <span class="comment">//</span>
+<a name="l00005"></a>00005 <span class="comment">//  Created by Kou on 11/07/01.</span>
+<a name="l00006"></a>00006 <span class="comment">//  Copyright 2011 The Frontier Project. All rights reserved.</span>
+<a name="l00007"></a>00007 <span class="comment">//</span>
+<a name="l00008"></a>00008 
+<a name="l00009"></a>00009 <span class="preprocessor">#import &quot;FRMailDefine.h&quot;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#import &quot;<a class="code" href="_f_r_mime_part_8h.html">FRMimePart.h</a>&quot;</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#import &quot;FRMailUtils.h&quot;</span>
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013 
+<a name="l00017"></a>00017 <span class="keyword">@implementation </span><a class="code" href="interface_f_r_mime_part.html" title="MIMEパーツデータ。">FRMimePart</a>
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019 
+<a name="l00023"></a>00023 <span class="keyword">@synthesize</span> <a class="code" href="interface_f_r_mime_part.html#a28e48bd1bacbd0303523a42e2eebb023" title="コンテンツデータ">content</a>             = mContent;
+<a name="l00024"></a>00024 <span class="keyword">@synthesize</span> <a class="code" href="interface_f_r_mime_part.html#a7834eb1fdf5562c86d41e8969eedcd9e" title="設定されているContent-Type文字列を取得する。">contentType</a>         = mContentType;
+<a name="l00025"></a>00025 <span class="keyword">@synthesize</span> <a class="code" href="interface_f_r_mime_part.html#a9818faf3f09ce57cbb7cc3b586a9bb47" title="利用する文字コード">charset</a>             = mCharset;
+<a name="l00026"></a>00026 <span class="keyword">@synthesize</span> <a class="code" href="interface_f_r_mime_part.html#a52ddde1599c29445b12b8d589928b6dd" title="コンテンツID">contentId</a>           = mContentId;
+<a name="l00027"></a>00027 <span class="keyword">@synthesize</span> <a class="code" href="interface_f_r_mime_part.html#a890bdc0473e0889f4281fa91ec72dc3e" title="説明">description</a>         = mDescription;
+<a name="l00028"></a>00028 <span class="keyword">@synthesize</span> <a class="code" href="interface_f_r_mime_part.html#a28b1354db926de3d6ab2b357ea74ebe4" title="ファイル名">fileName</a>            = mFileName;
+<a name="l00029"></a>00029 <span class="keyword">@synthesize</span> <a class="code" href="interface_f_r_mime_part.html#a951cc9470d577d31c5bdc9fa5d7ff62b" title="Content-Disposition動作種別">dispositionType</a>     = mDispositionType;
+<a name="l00030"></a>00030 <span class="keyword">@synthesize</span> <a class="code" href="interface_f_r_mime_part.html#a8966c73d820699cb90c8fb8a304b6a68" title="Content-Transfer-Encoding種別">transferEncoding</a>    = mTransferEncoding;
+<a name="l00031"></a>00031 
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033 
+<a name="l00034"></a>00034 
+<a name="l00040"></a>00040 - (id)init {
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042     <span class="comment">// インスタンスを生成する</span>
+<a name="l00043"></a>00043     <span class="keyword">self</span> = [<span class="keyword">super</span> init];
+<a name="l00044"></a>00044     
+<a name="l00045"></a>00045     <span class="comment">// インスタンス生成に成功した場合</span>
+<a name="l00046"></a>00046     <span class="keywordflow">if</span> (<span class="keyword">self</span>) {
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048         <span class="comment">// デフォルト値を設定する</span>
+<a name="l00049"></a>00049         <span class="keyword">self</span>.dispositionType    = <a class="code" href="_f_r_mime_part_8h.html#ae22da5dde30e2b5b9cbb69bfc22a1b1cacbd19bf99547097182c93d92d565436a" title="ファイル添付">FRMimeDispositionAttachment</a>;
+<a name="l00050"></a>00050         <span class="keyword">self</span>.transferEncoding   = <a class="code" href="_f_r_mime_part_8h.html#a93dfbeab4659ecc3c8a156694a0e8adfa9193fe9bb1d8ca8585f7f2d9a7605f23" title="自動エンコーディング">FRMimeTransferEncodingAuto</a>;
+<a name="l00051"></a>00051         
+<a name="l00052"></a>00052         <span class="comment">// MIMEパーツ一覧を初期化する</span>
+<a name="l00053"></a>00053         mMimeParts = [[NSMutableArray alloc] init];
+<a name="l00054"></a>00054         
+<a name="l00055"></a>00055     }
+<a name="l00056"></a>00056 
+<a name="l00057"></a>00057     <span class="comment">// 作成したインスタンスを返す</span>
+<a name="l00058"></a>00058     <span class="keywordflow">return</span> <span class="keyword">self</span>;
+<a name="l00059"></a>00059     
+<a name="l00060"></a>00060 }
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062 
+<a name="l00067"></a>00067 - (void)dealloc {
+<a name="l00068"></a>00068         
+<a name="l00069"></a>00069     <span class="comment">// 各メンバ変数を解放する</span>
+<a name="l00070"></a>00070     [mContent release];
+<a name="l00071"></a>00071     [mContentType release];
+<a name="l00072"></a>00072     [mCharset release];
+<a name="l00073"></a>00073     [mContentId release];
+<a name="l00074"></a>00074     [mDescription release];
+<a name="l00075"></a>00075     [mFileName release];
+<a name="l00076"></a>00076     [mMimeParts release];
+<a name="l00077"></a>00077     
+<a name="l00078"></a>00078     <span class="comment">// スーパークラスの解放処理を実行する</span>
+<a name="l00079"></a>00079     [<span class="keyword">super</span> dealloc];
+<a name="l00080"></a>00080     
+<a name="l00081"></a>00081 }
+<a name="l00082"></a>00082 
+<a name="l00083"></a>00083 
+<a name="l00089"></a><a class="code" href="interface_f_r_mime_part.html#a40ede3761cff0a432e35255599976fa1">00089</a> + (<a class="code" href="interface_f_r_mime_part.html" title="MIMEパーツデータ。">FRMimePart</a>*)<a class="code" href="interface_f_r_mime_part.html#a40ede3761cff0a432e35255599976fa1" title="MIMEパーツデータを一時インスタンスとして初期化する。">mimePart</a> {
+<a name="l00090"></a>00090     
+<a name="l00091"></a>00091     <span class="keywordflow">return</span> [[[<a class="code" href="interface_f_r_mime_part.html" title="MIMEパーツデータ。">FRMimePart</a> alloc] init] autorelease];
+<a name="l00092"></a>00092     
+<a name="l00093"></a>00093 }
+<a name="l00094"></a>00094 
+<a name="l00095"></a>00095 
+<a name="l00101"></a><a class="code" href="interface_f_r_mime_part.html#abec4c716c332d3f870360e7e9b35f2fa">00101</a> - (void)setContentTypeByMimeType:(<a class="code" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961" title="MIME Content-Type種別列挙型。">FRMimeType</a>)mimeType {
+<a name="l00102"></a>00102     
+<a name="l00103"></a>00103     <span class="comment">// 現在のContent-Typeを解放する</span>
+<a name="l00104"></a>00104     [mContentType release];
+<a name="l00105"></a>00105 
+<a name="l00106"></a>00106     <span class="comment">// 指定種別に応じたConten-Type文字列を設定する</span>
+<a name="l00107"></a>00107     mContentType = [FRMailUtils initMimeContentType:mimeType];
+<a name="l00108"></a>00108     
+<a name="l00109"></a>00109 }
+<a name="l00110"></a>00110 
+<a name="l00111"></a>00111 
+<a name="l00117"></a>00117 - (void)setContentTypeWithString:(NSString*)contentType {
+<a name="l00118"></a>00118 
+<a name="l00119"></a>00119     <span class="comment">// 異なる値の場合</span>
+<a name="l00120"></a>00120     <span class="keywordflow">if</span> (mContentType != <a class="code" href="interface_f_r_mime_part.html#a7834eb1fdf5562c86d41e8969eedcd9e" title="設定されているContent-Type文字列を取得する。">contentType</a>) {
+<a name="l00121"></a>00121     
+<a name="l00122"></a>00122         <span class="comment">// 現在のContent-Typeを解放する</span>
+<a name="l00123"></a>00123         [mContentType release];
+<a name="l00124"></a>00124         
+<a name="l00125"></a>00125         <span class="comment">// 指定された文字列をコピーして設定する</span>
+<a name="l00126"></a>00126         mContentType = [contentType copy];
+<a name="l00127"></a>00127         
+<a name="l00128"></a>00128     }
+<a name="l00129"></a>00129     
+<a name="l00130"></a>00130 }
+<a name="l00131"></a>00131 
+<a name="l00132"></a>00132 
+<a name="l00138"></a><a class="code" href="interface_f_r_mime_part.html#a471dbbe300b6b05597ca9d2741f61684">00138</a> - (void)addMimePart:(<a class="code" href="interface_f_r_mime_part.html" title="MIMEパーツデータ。">FRMimePart</a>*)mimePart {
+<a name="l00139"></a>00139     
+<a name="l00140"></a>00140     <span class="comment">// MIMEパーツが nil の場合はアサート</span>
+<a name="l00141"></a>00141     NSAssert(mimePart != nil, <span class="stringliteral">@&quot;The argument is nil.&quot;</span>);
+<a name="l00142"></a>00142     
+<a name="l00143"></a>00143     <span class="comment">// MIMEパーツをMIMEパーツ一覧へ追加する</span>
+<a name="l00144"></a>00144     [mMimeParts addObject:mimePart];
+<a name="l00145"></a>00145     
+<a name="l00146"></a>00146 }
+<a name="l00147"></a>00147 
+<a name="l00148"></a>00148 
+<a name="l00154"></a><a class="code" href="interface_f_r_mime_part.html#abd7c69579c0440cb1274eb7d99cacf90">00154</a> - (NSEnumerator*)<a class="code" href="interface_f_r_mime_part.html#abd7c69579c0440cb1274eb7d99cacf90" title="MIMEパーツ一覧へアクセスするための列挙子を取得する。">enumeratorMimeParts</a> {
+<a name="l00155"></a>00155     
+<a name="l00156"></a>00156     <span class="keywordflow">return</span> [mMimeParts objectEnumerator];
+<a name="l00157"></a>00157     
+<a name="l00158"></a>00158 }
+<a name="l00159"></a>00159 
+<a name="l00160"></a>00160 
+<a name="l00166"></a><a class="code" href="interface_f_r_mime_part.html#a042471cf6e969e24bee7172bda6306ae">00166</a> - (NSUInteger)<a class="code" href="interface_f_r_mime_part.html#a042471cf6e969e24bee7172bda6306ae" title="MIMEパーツ数を取得する。">mimePartsCount</a> {
+<a name="l00167"></a>00167     
+<a name="l00168"></a>00168     <span class="keywordflow">return</span> [mMimeParts count];
+<a name="l00169"></a>00169     
+<a name="l00170"></a>00170 }
+<a name="l00171"></a>00171 
+<a name="l00172"></a>00172 
+<a name="l00178"></a><a class="code" href="interface_f_r_mime_part.html#a5685fe8ac34047071d12f49b5f38bccb">00178</a> - (void)setText:(NSString*)text {
+<a name="l00179"></a>00179     
+<a name="l00180"></a>00180     [<span class="keyword">self</span> <a class="code" href="interface_f_r_mime_part.html#a555ede99e6c6b3758384a563ffbf03f1" title="指定されたテキストをプレーンテキストとして設定する。">setText</a>:text <a class="code" href="interface_f_r_mime_part.html#a555ede99e6c6b3758384a563ffbf03f1" title="指定されたテキストをプレーンテキストとして設定する。">charset</a>:@CHARSET_DEFAULT];
+<a name="l00181"></a>00181     
+<a name="l00182"></a>00182 }
+<a name="l00183"></a>00183 
+<a name="l00184"></a>00184 
+<a name="l00191"></a><a class="code" href="interface_f_r_mime_part.html#a555ede99e6c6b3758384a563ffbf03f1">00191</a> - (void)setText:(NSString*)text charset:(NSString*)charset {
+<a name="l00192"></a>00192     
+<a name="l00193"></a>00193     <span class="comment">// 現在設定されているデータを解放する</span>
+<a name="l00194"></a>00194     [mCharset release];
+<a name="l00195"></a>00195     
+<a name="l00196"></a>00196     <span class="comment">// 文字コードとContent-Typeを設定する</span>
+<a name="l00197"></a>00197     mCharset     = <a class="code" href="interface_f_r_mime_part.html#a9818faf3f09ce57cbb7cc3b586a9bb47" title="利用する文字コード">charset</a>;
+<a name="l00198"></a>00198     mContentType = @CONTENT_TYPE_TEXT_PLAIN;
+<a name="l00199"></a>00199     
+<a name="l00200"></a>00200     <span class="comment">// テキストをバイトデータに変換する</span>
+<a name="l00201"></a>00201     <span class="keyword">const</span> <span class="keywordtype">char</span>*     stringBytes = [text cStringUsingEncoding:[FRMailUtils charsetToStringEncoding:mCharset]];
+<a name="l00202"></a>00202 
+<a name="l00203"></a>00203     <span class="comment">// テキストのバイトデータを設定する</span>
+<a name="l00204"></a>00204     mContent = [[NSData alloc] initWithBytes:stringBytes length:strlen(stringBytes)];
+<a name="l00205"></a>00205     
+<a name="l00206"></a>00206 }
+<a name="l00207"></a>00207 
+<a name="l00208"></a>00208 
+<a name="l00214"></a><a class="code" href="interface_f_r_mime_part.html#a93910467ebca858866d7c9af1c2c4d75">00214</a> - (void)setHtmlText:(NSString*)text {
+<a name="l00215"></a>00215     
+<a name="l00216"></a>00216     [<span class="keyword">self</span> <a class="code" href="interface_f_r_mime_part.html#abe463d369ca95c447616052adbb2ccfb" title="指定されたテキストをHTMLテキストとして設定する。">setHtmlText</a>:text <a class="code" href="interface_f_r_mime_part.html#abe463d369ca95c447616052adbb2ccfb" title="指定されたテキストをHTMLテキストとして設定する。">charset</a>:@CHARSET_DEFAULT];
+<a name="l00217"></a>00217     
+<a name="l00218"></a>00218 }
+<a name="l00219"></a>00219 
+<a name="l00220"></a>00220 
+<a name="l00227"></a><a class="code" href="interface_f_r_mime_part.html#abe463d369ca95c447616052adbb2ccfb">00227</a> - (void)setHtmlText:(NSString*)text charset:(NSString*)charset {
+<a name="l00228"></a>00228     
+<a name="l00229"></a>00229     <span class="comment">// 現在設定されているデータを解放する</span>
+<a name="l00230"></a>00230     [mCharset release];
+<a name="l00231"></a>00231     
+<a name="l00232"></a>00232     <span class="comment">// 文字コードとContent-Typeを設定する</span>
+<a name="l00233"></a>00233     mCharset     = <a class="code" href="interface_f_r_mime_part.html#a9818faf3f09ce57cbb7cc3b586a9bb47" title="利用する文字コード">charset</a>;
+<a name="l00234"></a>00234     mContentType = @CONTENT_TYPE_HTML;
+<a name="l00235"></a>00235     
+<a name="l00236"></a>00236     <span class="comment">// テキストをバイトデータに変換する</span>
+<a name="l00237"></a>00237     <span class="keyword">const</span> <span class="keywordtype">char</span>*     stringBytes = [text cStringUsingEncoding:[FRMailUtils charsetToStringEncoding:mCharset]];
+<a name="l00238"></a>00238     
+<a name="l00239"></a>00239     <span class="comment">// テキストのバイトデータを設定する</span>
+<a name="l00240"></a>00240     mContent = [[NSData alloc] initWithBytes:stringBytes length:strlen(stringBytes)];
+<a name="l00241"></a>00241     
+<a name="l00242"></a>00242 }
+<a name="l00243"></a>00243 
+<a name="l00244"></a>00244 
+<a name="l00245"></a>00245 <span class="keyword">@end</span>
+</pre></div></div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>データ構造</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>プロパティ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>FrontierMailに対してTue Jul 26 2011 02:58:43に生成されました。&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
+</body>
+</html>

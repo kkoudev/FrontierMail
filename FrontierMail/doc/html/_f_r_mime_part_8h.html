@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>FrontierMail: Classes/FRMimePart.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.7.4 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">FrontierMail</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>グローバル</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">データ構造</a> &#124;
+<a href="#enum-members">列挙型</a>  </div>
+  <div class="headertitle">
+<div class="title">Classes/FRMimePart.h</div>  </div>
+</div>
+<div class="contents">
+<div class="textblock"><code>#import &lt;Foundation/Foundation.h&gt;</code><br/>
+<code>#include &lt;libetpan/libetpan.h&gt;</code><br/>
+</div>
+<p><a href="_f_r_mime_part_8h_source.html">ソースコードを見る。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+データ構造</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_f_r_mime_part.html">FRMimePart</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">MIMEパーツデータ。  <a href="interface_f_r_mime_part.html#details">[詳細]</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961">FRMimeType</a> { <br/>
+&#160;&#160;<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961aa31107d34712352fea9a676479bea09c">FRMimeTypeTextPlain</a> =  0, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a3b498e78e96265562b67258d168de560">FRMimeTypeHtml</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a55de9079d3695f9cce132b6e82b76fe1">FRMimeTypeTSV</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a6d3e75c596eaaeba25621a3a5349cdcd">FRMimeTypeCSS</a>, 
+<br/>
+&#160;&#160;<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a26cddb4f8aa244a90e4987f24a5ddab5">FRMimeTypeHDML</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961af9c800d8d82e852e2e4dd84449174f13">FRMimeTypeMSWord</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961ac3fa6fa1360bb68ae6a259f3d5995dcb">FRMimeTypeMSExcel</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a2c253ba0b0994577b02ffb1ef9962235">FRMimeTypeMSPowerPoint</a>, 
+<br/>
+&#160;&#160;<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a904ed4506f999a57706af2a9d3cfd78a">FRMimeTypePDF</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961ab1fb04cd1ef19cd1e099011191597553">FRMimeTypeJPEG</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a56e1ea2682254974bde99b5881ea2071">FRMimeTypeGIF</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a1b3ce30c99beead47ecc3f609be19da8">FRMimeTypePNG</a>, 
+<br/>
+&#160;&#160;<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a3cd544b83e49120c75aaaded3e65cb52">FRMimeTypeTIFF</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961aec80a8d531e35b66de568af7300e49d5">FRMimeTypeBMP</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a725197c1fb20178546bc5141663fdb11">FRMimeTypeAU</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961aaec5e1abf178a03da8f1526f231815e6">FRMimeTypeWAVE</a>, 
+<br/>
+&#160;&#160;<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961aed46ad5fef0b46284ad917cbb5d93680">FRMimeTypeAIFF</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a1827b79eabba99f262988225e8f71785">FRMimeTypeMP4</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961af6c32715928a1d008f86fbbf1a47862a">FRMimeTypeMIDI</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a57ec87e8a30c4c6115934a2113dea50a">FRMimeTypeAudioMPEG</a>, 
+<br/>
+&#160;&#160;<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a5e5c985306e82b5c5072de245ec26408">FRMimeTypeAudio3GPP</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a7c0eaf9134fc352b86cc97b3937ff948">FRMimeTypeAudio3GPP2</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a2141a05f2354b9de8ae87b55bcc0459a">FRMimeTypeAudioOGG</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a62e5e55659e34f41a63554b93b4b7212">FRMimeTypeWMV</a>, 
+<br/>
+&#160;&#160;<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a1d51f383bdd841b317b7f82648f8661f">FRMimeTypeFlash</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961ac322b8faceb4d76f356f970104b0fae9">FRMimeTypeVideoMPEG</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a4fea7ca968716d62902fc9807217d4bd">FRMimeTypeVideo3GPP</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a117d33853059e623723233113ebad556">FRMimeTypeVideo3GPP2</a>, 
+<br/>
+&#160;&#160;<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961acc068e5ac49fd3ceb1a06c2cacf56916">FRMimeTypeVideoOGG</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961af76bd3eb2b8aacd739983c0bf3d4b4d6">FRMimeTypeZIP</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a9250bb3c17e8bb57359b823400067a0f">FRMimeTypeGZIP</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a1e56b881f9db3437ed468bc08df734bd">FRMimeTypeTAR</a>, 
+<br/>
+&#160;&#160;<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a78bb3886b179f936b630ac3257d288bb">FRMimeTypeLZH</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a94449060e6d5d33f925552508fb48da9">FRMimeTypeJAR</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a7d6491c65087943035a1729aa04de447">FRMimeTypeCAB</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961ad6a524e27057bd95afaac3901811d9a5">FRMimeTypeBZ2</a>, 
+<br/>
+&#160;&#160;<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961afa5d9c9f8f68000dfbf2974d7c6f4e18">FRMimeTypeRAR</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961ae6fc3b6179f4714f43a3df03b7c5fe12">FRMimeType7Z</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961af02232e345de4e39f4aea12cb33bfcb8">FRMimeTypeMultipartMixed</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a14e4b04a0b60ebe1deb66e389cb3e8ba">FRMimeTypeMultipartRelated</a>, 
+<br/>
+&#160;&#160;<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a1361ba318e775e4984017b49784262f5">FRMimeTypeMultipartAlternative</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a3b78cfad30f76c53b97f3a3fb8fd1057">FRMimeTypeMultipartDigest</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961af81473e41660bd3519d549fe81c0a418">FRMimeTypeMultipartEncrypted</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a2104047d9af79a0f51bb0e710a3a03ab">FRMimeTypeMultipartParallel</a>, 
+<br/>
+&#160;&#160;<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a340d1305eaff1568b9ff3bb24e331afe">FRMimeTypeMultipartReport</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a04a7b99f183d81484a967fce250e27a7">FRMimeTypeMultipartSigned</a>, 
+<a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961a688c5d50d226ec89892dab1e7799d162">FRMimeTypeOctetStream</a>
+<br/>
+ }</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">MIME Content-Type種別列挙型。  <a href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_f_r_mime_part_8h.html#a93dfbeab4659ecc3c8a156694a0e8adf">FRMimeTransferEncoding</a> { <br/>
+&#160;&#160;<a class="el" href="_f_r_mime_part_8h.html#a93dfbeab4659ecc3c8a156694a0e8adfac8577c230de37da3f5c6ce329fee7fe4">FRMimeTransferEncodingNone</a> =  MAILMIME_MECHANISM_ERROR - 1, 
+<a class="el" href="_f_r_mime_part_8h.html#a93dfbeab4659ecc3c8a156694a0e8adfa9193fe9bb1d8ca8585f7f2d9a7605f23">FRMimeTransferEncodingAuto</a> =  MAILMIME_MECHANISM_ERROR, 
+<a class="el" href="_f_r_mime_part_8h.html#a93dfbeab4659ecc3c8a156694a0e8adfae1255798d4f99464a761f06e59e37713">FRMimeTransferEncoding7Bit</a> =  MAILMIME_MECHANISM_7BIT, 
+<a class="el" href="_f_r_mime_part_8h.html#a93dfbeab4659ecc3c8a156694a0e8adfac49b6cf51ea206d2f2d57df953a12331">FRMimeTransferEncoding8Bit</a> =  MAILMIME_MECHANISM_8BIT, 
+<br/>
+&#160;&#160;<a class="el" href="_f_r_mime_part_8h.html#a93dfbeab4659ecc3c8a156694a0e8adfaf3b9111b9eb0c4e6087365443476ec92">FRMimeTransferEncodingQuotedPrintable</a> =  MAILMIME_MECHANISM_QUOTED_PRINTABLE, 
+<a class="el" href="_f_r_mime_part_8h.html#a93dfbeab4659ecc3c8a156694a0e8adfa633a303c5aaac1656dc7d333c331e59d">FRMimeTransferEncodingBase64</a> =  MAILMIME_MECHANISM_BASE64, 
+<a class="el" href="_f_r_mime_part_8h.html#a93dfbeab4659ecc3c8a156694a0e8adfa47ab8f152ceb0909f1976819dd898bac">FRMimeTransferEncodingBinary</a> =  MAILMIME_MECHANISM_BINARY
+<br/>
+ }</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Content-Transfer-Encoding項目種別列挙型。  <a href="_f_r_mime_part_8h.html#a93dfbeab4659ecc3c8a156694a0e8adf">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_f_r_mime_part_8h.html#ae22da5dde30e2b5b9cbb69bfc22a1b1c">FRMimeDispositionType</a> { <a class="el" href="_f_r_mime_part_8h.html#ae22da5dde30e2b5b9cbb69bfc22a1b1ca1f8bc06e39c60d5d263842d6be9f854e">FRMimeDispositionInline</a> =  MAILMIME_DISPOSITION_TYPE_INLINE, 
+<a class="el" href="_f_r_mime_part_8h.html#ae22da5dde30e2b5b9cbb69bfc22a1b1cacbd19bf99547097182c93d92d565436a">FRMimeDispositionAttachment</a> =  MAILMIME_DISPOSITION_TYPE_ATTACHMENT
+ }</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Content-Disposition項目種別列挙型。  <a href="_f_r_mime_part_8h.html#ae22da5dde30e2b5b9cbb69bfc22a1b1c">[詳細]</a><br/></td></tr>
+</table>
+<hr/><h2>列挙型</h2>
+<a class="anchor" id="ae22da5dde30e2b5b9cbb69bfc22a1b1c"></a><!-- doxytag: member="FRMimePart.h::FRMimeDispositionType" ref="ae22da5dde30e2b5b9cbb69bfc22a1b1c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_f_r_mime_part_8h.html#ae22da5dde30e2b5b9cbb69bfc22a1b1c">FRMimeDispositionType</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Content-Disposition項目種別列挙型。 </p>
+<dl class="author"><dt><b>作者:</b></dt><dd>Kou </dd></dl>
+<dl><dt><b>列挙型の値: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="ae22da5dde30e2b5b9cbb69bfc22a1b1ca1f8bc06e39c60d5d263842d6be9f854e"></a><!-- doxytag: member="FRMimeDispositionInline" ref="ae22da5dde30e2b5b9cbb69bfc22a1b1ca1f8bc06e39c60d5d263842d6be9f854e" args="" -->FRMimeDispositionInline</em>&nbsp;</td><td>
+<p>インライン表示 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ae22da5dde30e2b5b9cbb69bfc22a1b1cacbd19bf99547097182c93d92d565436a"></a><!-- doxytag: member="FRMimeDispositionAttachment" ref="ae22da5dde30e2b5b9cbb69bfc22a1b1cacbd19bf99547097182c93d92d565436a" args="" -->FRMimeDispositionAttachment</em>&nbsp;</td><td>
+<p>ファイル添付 </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a93dfbeab4659ecc3c8a156694a0e8adf"></a><!-- doxytag: member="FRMimePart.h::FRMimeTransferEncoding" ref="a93dfbeab4659ecc3c8a156694a0e8adf" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_f_r_mime_part_8h.html#a93dfbeab4659ecc3c8a156694a0e8adf">FRMimeTransferEncoding</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Content-Transfer-Encoding項目種別列挙型。 </p>
+<dl class="author"><dt><b>作者:</b></dt><dd>Kou </dd></dl>
+<dl><dt><b>列挙型の値: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a93dfbeab4659ecc3c8a156694a0e8adfac8577c230de37da3f5c6ce329fee7fe4"></a><!-- doxytag: member="FRMimeTransferEncodingNone" ref="a93dfbeab4659ecc3c8a156694a0e8adfac8577c230de37da3f5c6ce329fee7fe4" args="" -->FRMimeTransferEncodingNone</em>&nbsp;</td><td>
+<p>エンコーディング指定なし </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a93dfbeab4659ecc3c8a156694a0e8adfa9193fe9bb1d8ca8585f7f2d9a7605f23"></a><!-- doxytag: member="FRMimeTransferEncodingAuto" ref="a93dfbeab4659ecc3c8a156694a0e8adfa9193fe9bb1d8ca8585f7f2d9a7605f23" args="" -->FRMimeTransferEncodingAuto</em>&nbsp;</td><td>
+<p>自動エンコーディング </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a93dfbeab4659ecc3c8a156694a0e8adfae1255798d4f99464a761f06e59e37713"></a><!-- doxytag: member="FRMimeTransferEncoding7Bit" ref="a93dfbeab4659ecc3c8a156694a0e8adfae1255798d4f99464a761f06e59e37713" args="" -->FRMimeTransferEncoding7Bit</em>&nbsp;</td><td>
+<p>7bitエンコーディング </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a93dfbeab4659ecc3c8a156694a0e8adfac49b6cf51ea206d2f2d57df953a12331"></a><!-- doxytag: member="FRMimeTransferEncoding8Bit" ref="a93dfbeab4659ecc3c8a156694a0e8adfac49b6cf51ea206d2f2d57df953a12331" args="" -->FRMimeTransferEncoding8Bit</em>&nbsp;</td><td>
+<p>8bitエンコーディング </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a93dfbeab4659ecc3c8a156694a0e8adfaf3b9111b9eb0c4e6087365443476ec92"></a><!-- doxytag: member="FRMimeTransferEncodingQuotedPrintable" ref="a93dfbeab4659ecc3c8a156694a0e8adfaf3b9111b9eb0c4e6087365443476ec92" args="" -->FRMimeTransferEncodingQuotedPrintable</em>&nbsp;</td><td>
+<p>Quoted-printableエンコーディング </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a93dfbeab4659ecc3c8a156694a0e8adfa633a303c5aaac1656dc7d333c331e59d"></a><!-- doxytag: member="FRMimeTransferEncodingBase64" ref="a93dfbeab4659ecc3c8a156694a0e8adfa633a303c5aaac1656dc7d333c331e59d" args="" -->FRMimeTransferEncodingBase64</em>&nbsp;</td><td>
+<p>Base64エンコーディング </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a93dfbeab4659ecc3c8a156694a0e8adfa47ab8f152ceb0909f1976819dd898bac"></a><!-- doxytag: member="FRMimeTransferEncodingBinary" ref="a93dfbeab4659ecc3c8a156694a0e8adfa47ab8f152ceb0909f1976819dd898bac" args="" -->FRMimeTransferEncodingBinary</em>&nbsp;</td><td>
+<p>Binaryエンコーディング </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa0026fee26a0b1150f78ceac809df961"></a><!-- doxytag: member="FRMimePart.h::FRMimeType" ref="aa0026fee26a0b1150f78ceac809df961" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_f_r_mime_part_8h.html#aa0026fee26a0b1150f78ceac809df961">FRMimeType</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>MIME Content-Type種別列挙型。 </p>
+<dl class="author"><dt><b>作者:</b></dt><dd>Kou </dd></dl>
+<dl><dt><b>列挙型の値: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961aa31107d34712352fea9a676479bea09c"></a><!-- doxytag: member="FRMimeTypeTextPlain" ref="aa0026fee26a0b1150f78ceac809df961aa31107d34712352fea9a676479bea09c" args="" -->FRMimeTypeTextPlain</em>&nbsp;</td><td>
+<p>プレーンテキスト (text/plain) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a3b498e78e96265562b67258d168de560"></a><!-- doxytag: member="FRMimeTypeHtml" ref="aa0026fee26a0b1150f78ceac809df961a3b498e78e96265562b67258d168de560" args="" -->FRMimeTypeHtml</em>&nbsp;</td><td>
+<p>HTML文書 (text/html) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a55de9079d3695f9cce132b6e82b76fe1"></a><!-- doxytag: member="FRMimeTypeTSV" ref="aa0026fee26a0b1150f78ceac809df961a55de9079d3695f9cce132b6e82b76fe1" args="" -->FRMimeTypeTSV</em>&nbsp;</td><td>
+<p>TSVファイル (text/tab-separated-values) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a6d3e75c596eaaeba25621a3a5349cdcd"></a><!-- doxytag: member="FRMimeTypeCSS" ref="aa0026fee26a0b1150f78ceac809df961a6d3e75c596eaaeba25621a3a5349cdcd" args="" -->FRMimeTypeCSS</em>&nbsp;</td><td>
+<p>スタイルシート (text/css) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a26cddb4f8aa244a90e4987f24a5ddab5"></a><!-- doxytag: member="FRMimeTypeHDML" ref="aa0026fee26a0b1150f78ceac809df961a26cddb4f8aa244a90e4987f24a5ddab5" args="" -->FRMimeTypeHDML</em>&nbsp;</td><td>
+<p>HDML文書 (text/x-hdml) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961af9c800d8d82e852e2e4dd84449174f13"></a><!-- doxytag: member="FRMimeTypeMSWord" ref="aa0026fee26a0b1150f78ceac809df961af9c800d8d82e852e2e4dd84449174f13" args="" -->FRMimeTypeMSWord</em>&nbsp;</td><td>
+<p>ワード文書 (application/msword) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961ac3fa6fa1360bb68ae6a259f3d5995dcb"></a><!-- doxytag: member="FRMimeTypeMSExcel" ref="aa0026fee26a0b1150f78ceac809df961ac3fa6fa1360bb68ae6a259f3d5995dcb" args="" -->FRMimeTypeMSExcel</em>&nbsp;</td><td>
+<p>エクセルシート (application/vnd.ms-excel) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a2c253ba0b0994577b02ffb1ef9962235"></a><!-- doxytag: member="FRMimeTypeMSPowerPoint" ref="aa0026fee26a0b1150f78ceac809df961a2c253ba0b0994577b02ffb1ef9962235" args="" -->FRMimeTypeMSPowerPoint</em>&nbsp;</td><td>
+<p>パワーポイント (application/vnd.ms-powerpoint) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a904ed4506f999a57706af2a9d3cfd78a"></a><!-- doxytag: member="FRMimeTypePDF" ref="aa0026fee26a0b1150f78ceac809df961a904ed4506f999a57706af2a9d3cfd78a" args="" -->FRMimeTypePDF</em>&nbsp;</td><td>
+<p>PDF文書 (application/pdf) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961ab1fb04cd1ef19cd1e099011191597553"></a><!-- doxytag: member="FRMimeTypeJPEG" ref="aa0026fee26a0b1150f78ceac809df961ab1fb04cd1ef19cd1e099011191597553" args="" -->FRMimeTypeJPEG</em>&nbsp;</td><td>
+<p>JPEG画像 (image/jpeg) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a56e1ea2682254974bde99b5881ea2071"></a><!-- doxytag: member="FRMimeTypeGIF" ref="aa0026fee26a0b1150f78ceac809df961a56e1ea2682254974bde99b5881ea2071" args="" -->FRMimeTypeGIF</em>&nbsp;</td><td>
+<p>GIF画像 (image/gif) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a1b3ce30c99beead47ecc3f609be19da8"></a><!-- doxytag: member="FRMimeTypePNG" ref="aa0026fee26a0b1150f78ceac809df961a1b3ce30c99beead47ecc3f609be19da8" args="" -->FRMimeTypePNG</em>&nbsp;</td><td>
+<p>PNG画像 (image/png) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a3cd544b83e49120c75aaaded3e65cb52"></a><!-- doxytag: member="FRMimeTypeTIFF" ref="aa0026fee26a0b1150f78ceac809df961a3cd544b83e49120c75aaaded3e65cb52" args="" -->FRMimeTypeTIFF</em>&nbsp;</td><td>
+<p>TIFF画像 (image/tiff) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961aec80a8d531e35b66de568af7300e49d5"></a><!-- doxytag: member="FRMimeTypeBMP" ref="aa0026fee26a0b1150f78ceac809df961aec80a8d531e35b66de568af7300e49d5" args="" -->FRMimeTypeBMP</em>&nbsp;</td><td>
+<p>BMP画像 (image/bmp) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a725197c1fb20178546bc5141663fdb11"></a><!-- doxytag: member="FRMimeTypeAU" ref="aa0026fee26a0b1150f78ceac809df961a725197c1fb20178546bc5141663fdb11" args="" -->FRMimeTypeAU</em>&nbsp;</td><td>
+<p>AUオーディオファイル (audio/basic) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961aaec5e1abf178a03da8f1526f231815e6"></a><!-- doxytag: member="FRMimeTypeWAVE" ref="aa0026fee26a0b1150f78ceac809df961aaec5e1abf178a03da8f1526f231815e6" args="" -->FRMimeTypeWAVE</em>&nbsp;</td><td>
+<p>WAVEオーディオファイル (audio/x-wav) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961aed46ad5fef0b46284ad917cbb5d93680"></a><!-- doxytag: member="FRMimeTypeAIFF" ref="aa0026fee26a0b1150f78ceac809df961aed46ad5fef0b46284ad917cbb5d93680" args="" -->FRMimeTypeAIFF</em>&nbsp;</td><td>
+<p>AIFFオーディオファイル (audio/x-aiff) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a1827b79eabba99f262988225e8f71785"></a><!-- doxytag: member="FRMimeTypeMP4" ref="aa0026fee26a0b1150f78ceac809df961a1827b79eabba99f262988225e8f71785" args="" -->FRMimeTypeMP4</em>&nbsp;</td><td>
+<p>MP4オーディオファイル (audio/mp4) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961af6c32715928a1d008f86fbbf1a47862a"></a><!-- doxytag: member="FRMimeTypeMIDI" ref="aa0026fee26a0b1150f78ceac809df961af6c32715928a1d008f86fbbf1a47862a" args="" -->FRMimeTypeMIDI</em>&nbsp;</td><td>
+<p>MIDIオーディオファイル (audio/midi) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a57ec87e8a30c4c6115934a2113dea50a"></a><!-- doxytag: member="FRMimeTypeAudioMPEG" ref="aa0026fee26a0b1150f78ceac809df961a57ec87e8a30c4c6115934a2113dea50a" args="" -->FRMimeTypeAudioMPEG</em>&nbsp;</td><td>
+<p>MPEGオーディオファイル (audio/mpeg) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a5e5c985306e82b5c5072de245ec26408"></a><!-- doxytag: member="FRMimeTypeAudio3GPP" ref="aa0026fee26a0b1150f78ceac809df961a5e5c985306e82b5c5072de245ec26408" args="" -->FRMimeTypeAudio3GPP</em>&nbsp;</td><td>
+<p>3GPP音声ファイル (audio/3gpp) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a7c0eaf9134fc352b86cc97b3937ff948"></a><!-- doxytag: member="FRMimeTypeAudio3GPP2" ref="aa0026fee26a0b1150f78ceac809df961a7c0eaf9134fc352b86cc97b3937ff948" args="" -->FRMimeTypeAudio3GPP2</em>&nbsp;</td><td>
+<p>3GPP2音声ファイル (audio/3gpp2) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a2141a05f2354b9de8ae87b55bcc0459a"></a><!-- doxytag: member="FRMimeTypeAudioOGG" ref="aa0026fee26a0b1150f78ceac809df961a2141a05f2354b9de8ae87b55bcc0459a" args="" -->FRMimeTypeAudioOGG</em>&nbsp;</td><td>
+<p>OGG音声ファイル (audio/ogg) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a62e5e55659e34f41a63554b93b4b7212"></a><!-- doxytag: member="FRMimeTypeWMV" ref="aa0026fee26a0b1150f78ceac809df961a62e5e55659e34f41a63554b93b4b7212" args="" -->FRMimeTypeWMV</em>&nbsp;</td><td>
+<p>WMVファイル (video/x-ms-wmv) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a1d51f383bdd841b317b7f82648f8661f"></a><!-- doxytag: member="FRMimeTypeFlash" ref="aa0026fee26a0b1150f78ceac809df961a1d51f383bdd841b317b7f82648f8661f" args="" -->FRMimeTypeFlash</em>&nbsp;</td><td>
+<p>FLASHファイル (application/x-shockwave-flash) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961ac322b8faceb4d76f356f970104b0fae9"></a><!-- doxytag: member="FRMimeTypeVideoMPEG" ref="aa0026fee26a0b1150f78ceac809df961ac322b8faceb4d76f356f970104b0fae9" args="" -->FRMimeTypeVideoMPEG</em>&nbsp;</td><td>
+<p>MPEG動画ファイル (video/mpeg) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a4fea7ca968716d62902fc9807217d4bd"></a><!-- doxytag: member="FRMimeTypeVideo3GPP" ref="aa0026fee26a0b1150f78ceac809df961a4fea7ca968716d62902fc9807217d4bd" args="" -->FRMimeTypeVideo3GPP</em>&nbsp;</td><td>
+<p>3GPP動画ファイル (video/3gpp) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a117d33853059e623723233113ebad556"></a><!-- doxytag: member="FRMimeTypeVideo3GPP2" ref="aa0026fee26a0b1150f78ceac809df961a117d33853059e623723233113ebad556" args="" -->FRMimeTypeVideo3GPP2</em>&nbsp;</td><td>
+<p>3GPP2動画ファイル (video/3gpp2) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961acc068e5ac49fd3ceb1a06c2cacf56916"></a><!-- doxytag: member="FRMimeTypeVideoOGG" ref="aa0026fee26a0b1150f78ceac809df961acc068e5ac49fd3ceb1a06c2cacf56916" args="" -->FRMimeTypeVideoOGG</em>&nbsp;</td><td>
+<p>OGG動画ファイル (video/ogg) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961af76bd3eb2b8aacd739983c0bf3d4b4d6"></a><!-- doxytag: member="FRMimeTypeZIP" ref="aa0026fee26a0b1150f78ceac809df961af76bd3eb2b8aacd739983c0bf3d4b4d6" args="" -->FRMimeTypeZIP</em>&nbsp;</td><td>
+<p>ZIPファイル (application/x-zip) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a9250bb3c17e8bb57359b823400067a0f"></a><!-- doxytag: member="FRMimeTypeGZIP" ref="aa0026fee26a0b1150f78ceac809df961a9250bb3c17e8bb57359b823400067a0f" args="" -->FRMimeTypeGZIP</em>&nbsp;</td><td>
+<p>GZIPファイル (application/x-gzip) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a1e56b881f9db3437ed468bc08df734bd"></a><!-- doxytag: member="FRMimeTypeTAR" ref="aa0026fee26a0b1150f78ceac809df961a1e56b881f9db3437ed468bc08df734bd" args="" -->FRMimeTypeTAR</em>&nbsp;</td><td>
+<p>TARファイル (application/x-tar) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a78bb3886b179f936b630ac3257d288bb"></a><!-- doxytag: member="FRMimeTypeLZH" ref="aa0026fee26a0b1150f78ceac809df961a78bb3886b179f936b630ac3257d288bb" args="" -->FRMimeTypeLZH</em>&nbsp;</td><td>
+<p>LZHファイル (application/x-lzh) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a94449060e6d5d33f925552508fb48da9"></a><!-- doxytag: member="FRMimeTypeJAR" ref="aa0026fee26a0b1150f78ceac809df961a94449060e6d5d33f925552508fb48da9" args="" -->FRMimeTypeJAR</em>&nbsp;</td><td>
+<p>JARファイル (application/java-archive) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a7d6491c65087943035a1729aa04de447"></a><!-- doxytag: member="FRMimeTypeCAB" ref="aa0026fee26a0b1150f78ceac809df961a7d6491c65087943035a1729aa04de447" args="" -->FRMimeTypeCAB</em>&nbsp;</td><td>
+<p>CABファイル (application/cab) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961ad6a524e27057bd95afaac3901811d9a5"></a><!-- doxytag: member="FRMimeTypeBZ2" ref="aa0026fee26a0b1150f78ceac809df961ad6a524e27057bd95afaac3901811d9a5" args="" -->FRMimeTypeBZ2</em>&nbsp;</td><td>
+<p>BZ2ファイル (application/x-bzip2) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961afa5d9c9f8f68000dfbf2974d7c6f4e18"></a><!-- doxytag: member="FRMimeTypeRAR" ref="aa0026fee26a0b1150f78ceac809df961afa5d9c9f8f68000dfbf2974d7c6f4e18" args="" -->FRMimeTypeRAR</em>&nbsp;</td><td>
+<p>RARファイル (application/rar) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961ae6fc3b6179f4714f43a3df03b7c5fe12"></a><!-- doxytag: member="FRMimeType7Z" ref="aa0026fee26a0b1150f78ceac809df961ae6fc3b6179f4714f43a3df03b7c5fe12" args="" -->FRMimeType7Z</em>&nbsp;</td><td>
+<p>7Zファイル (application/x-7z-compressed) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961af02232e345de4e39f4aea12cb33bfcb8"></a><!-- doxytag: member="FRMimeTypeMultipartMixed" ref="aa0026fee26a0b1150f78ceac809df961af02232e345de4e39f4aea12cb33bfcb8" args="" -->FRMimeTypeMultipartMixed</em>&nbsp;</td><td>
+<p>複数データ (multipart/mixed) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a14e4b04a0b60ebe1deb66e389cb3e8ba"></a><!-- doxytag: member="FRMimeTypeMultipartRelated" ref="aa0026fee26a0b1150f78ceac809df961a14e4b04a0b60ebe1deb66e389cb3e8ba" args="" -->FRMimeTypeMultipartRelated</em>&nbsp;</td><td>
+<p>メッセージリンク (multipart/related) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a1361ba318e775e4984017b49784262f5"></a><!-- doxytag: member="FRMimeTypeMultipartAlternative" ref="aa0026fee26a0b1150f78ceac809df961a1361ba318e775e4984017b49784262f5" args="" -->FRMimeTypeMultipartAlternative</em>&nbsp;</td><td>
+<p>同一内容他形式表現 (multipart/alternative) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a3b78cfad30f76c53b97f3a3fb8fd1057"></a><!-- doxytag: member="FRMimeTypeMultipartDigest" ref="aa0026fee26a0b1150f78ceac809df961a3b78cfad30f76c53b97f3a3fb8fd1057" args="" -->FRMimeTypeMultipartDigest</em>&nbsp;</td><td>
+<p>RFC822メッセージ (multipart/digest) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961af81473e41660bd3519d549fe81c0a418"></a><!-- doxytag: member="FRMimeTypeMultipartEncrypted" ref="aa0026fee26a0b1150f78ceac809df961af81473e41660bd3519d549fe81c0a418" args="" -->FRMimeTypeMultipartEncrypted</em>&nbsp;</td><td>
+<p>暗号化メッセージ (multipart/encrypted) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a2104047d9af79a0f51bb0e710a3a03ab"></a><!-- doxytag: member="FRMimeTypeMultipartParallel" ref="aa0026fee26a0b1150f78ceac809df961a2104047d9af79a0f51bb0e710a3a03ab" args="" -->FRMimeTypeMultipartParallel</em>&nbsp;</td><td>
+<p>複合表示 (multipart/parallel) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a340d1305eaff1568b9ff3bb24e331afe"></a><!-- doxytag: member="FRMimeTypeMultipartReport" ref="aa0026fee26a0b1150f78ceac809df961a340d1305eaff1568b9ff3bb24e331afe" args="" -->FRMimeTypeMultipartReport</em>&nbsp;</td><td>
+<p>エラーメール等のレポート型 (multipart/report) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a04a7b99f183d81484a967fce250e27a7"></a><!-- doxytag: member="FRMimeTypeMultipartSigned" ref="aa0026fee26a0b1150f78ceac809df961a04a7b99f183d81484a967fce250e27a7" args="" -->FRMimeTypeMultipartSigned</em>&nbsp;</td><td>
+<p>S/MIME署名付メッセージ (multipart/signed) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa0026fee26a0b1150f78ceac809df961a688c5d50d226ec89892dab1e7799d162"></a><!-- doxytag: member="FRMimeTypeOctetStream" ref="aa0026fee26a0b1150f78ceac809df961a688c5d50d226ec89892dab1e7799d162" args="" -->FRMimeTypeOctetStream</em>&nbsp;</td><td>
+<p>バイナリ形式 (application/octet-stream) </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>データ構造</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>プロパティ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>FrontierMailに対してTue Jul 26 2011 03:18:34に生成されました。&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
+</body>
+</html>

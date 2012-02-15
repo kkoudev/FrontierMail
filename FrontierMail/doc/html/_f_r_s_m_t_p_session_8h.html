@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>FrontierMail: Classes/FRSMTPSession.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.7.4 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">FrontierMail</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>グローバル</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">データ構造</a> &#124;
+<a href="#enum-members">列挙型</a>  </div>
+  <div class="headertitle">
+<div class="title">Classes/FRSMTPSession.h</div>  </div>
+</div>
+<div class="contents">
+<div class="textblock"><code>#import &lt;Foundation/Foundation.h&gt;</code><br/>
+<code>#include &lt;libetpan/libetpan.h&gt;</code><br/>
+<code>#import &quot;<a class="el" href="_f_r_mail_type_8h_source.html">FRMailType.h</a>&quot;</code><br/>
+<code>#import &quot;<a class="el" href="_f_r_mail_message_8h_source.html">FRMailMessage.h</a>&quot;</code><br/>
+</div>
+<p><a href="_f_r_s_m_t_p_session_8h_source.html">ソースコードを見る。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+データ構造</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_f_r_s_m_t_p_session.html">FRSMTPSession</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">SMTPセッションクラス。  <a href="interface_f_r_s_m_t_p_session.html#details">[詳細]</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_f_r_s_m_t_p_session_8h.html#ab58d6af3c049a1b80f9e1daa97c2fbbe">FRSMTPConnectionType</a> { <a class="el" href="_f_r_s_m_t_p_session_8h.html#ab58d6af3c049a1b80f9e1daa97c2fbbea52d4fdb0e8f67f8880299c6d981ceba7">FRSMTPConnectionNormal</a>, 
+<a class="el" href="_f_r_s_m_t_p_session_8h.html#ab58d6af3c049a1b80f9e1daa97c2fbbea48911faf685ff11bef278b4ad6af6a7e">FRSMTPConnectionSSL</a>, 
+<a class="el" href="_f_r_s_m_t_p_session_8h.html#ab58d6af3c049a1b80f9e1daa97c2fbbea08f38472c01bcd002ced8c0907a5073d">FRSMTPConnectionTLS</a>
+ }</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">SMTP接続種別を定義する列挙型。  <a href="_f_r_s_m_t_p_session_8h.html#ab58d6af3c049a1b80f9e1daa97c2fbbe">[詳細]</a><br/></td></tr>
+</table>
+<hr/><h2>列挙型</h2>
+<a class="anchor" id="ab58d6af3c049a1b80f9e1daa97c2fbbe"></a><!-- doxytag: member="FRSMTPSession.h::FRSMTPConnectionType" ref="ab58d6af3c049a1b80f9e1daa97c2fbbe" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_f_r_s_m_t_p_session_8h.html#ab58d6af3c049a1b80f9e1daa97c2fbbe">FRSMTPConnectionType</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>SMTP接続種別を定義する列挙型。 </p>
+<dl class="author"><dt><b>作者:</b></dt><dd>Kou </dd></dl>
+<dl><dt><b>列挙型の値: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="ab58d6af3c049a1b80f9e1daa97c2fbbea52d4fdb0e8f67f8880299c6d981ceba7"></a><!-- doxytag: member="FRSMTPConnectionNormal" ref="ab58d6af3c049a1b80f9e1daa97c2fbbea52d4fdb0e8f67f8880299c6d981ceba7" args="" -->FRSMTPConnectionNormal</em>&nbsp;</td><td>
+<p>通常接続 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ab58d6af3c049a1b80f9e1daa97c2fbbea48911faf685ff11bef278b4ad6af6a7e"></a><!-- doxytag: member="FRSMTPConnectionSSL" ref="ab58d6af3c049a1b80f9e1daa97c2fbbea48911faf685ff11bef278b4ad6af6a7e" args="" -->FRSMTPConnectionSSL</em>&nbsp;</td><td>
+<p>SSL接続 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ab58d6af3c049a1b80f9e1daa97c2fbbea08f38472c01bcd002ced8c0907a5073d"></a><!-- doxytag: member="FRSMTPConnectionTLS" ref="ab58d6af3c049a1b80f9e1daa97c2fbbea08f38472c01bcd002ced8c0907a5073d" args="" -->FRSMTPConnectionTLS</em>&nbsp;</td><td>
+<p>TLS接続 </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>データ構造</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>プロパティ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>FrontierMailに対してTue Jul 26 2011 03:18:34に生成されました。&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
+</body>
+</html>

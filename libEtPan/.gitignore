@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# For Xcode
+
+cat <<EOF > .gitignore
+# xcode noise
+*/build/*
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+**/*.xcodeproj/*
+!**/*.xcodeproj/project.pbxproj
+
+# old skool
+.svn
+
+# osx noise
+.DS_Store
+*.swp
+*~.nib
+profile
+EOF
+
+cat <<EOF > .gitattributes
+*.pbxproj -crlf -diff -merge
+EOF
+

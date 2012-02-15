@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>FrontierMail: クラス FRSMTPSession</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.7.4 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">FrontierMail</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>データ構造</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li><a href="classes.html"><span>データ構造索引</span></a></li>
+      <li><a href="functions.html"><span>データフィールド</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public メソッド</a> &#124;
+<a href="#pub-static-methods">Static Public メソッド</a> &#124;
+<a href="#properties">プロパティ</a>  </div>
+  <div class="headertitle">
+<div class="title">クラス FRSMTPSession</div>  </div>
+</div>
+<div class="contents">
+<!-- doxytag: class="FRSMTPSession" -->
+<p>SMTPセッションクラス。  
+ <a href="interface_f_r_s_m_t_p_session.html#details">[詳細]</a></p>
+
+<p><code>#import &lt;<a class="el" href="_f_r_s_m_t_p_session_8h_source.html">FRSMTPSession.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_f_r_s_m_t_p_session.html">FRSMTPSession</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_f_r_s_m_t_p_session.html#aaa9b8f4d557320abda487eea283f76c5">initWithConnectionInfo:hostAddress:portNo:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">認証情報以外の接続情報を指定して初期化を行う。  <a href="#aaa9b8f4d557320abda487eea283f76c5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_f_r_s_m_t_p_session.html#abce1e3496098bb0ed5b5313a4ece967e">connect</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">接続を開始する。  <a href="#abce1e3496098bb0ed5b5313a4ece967e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_f_r_s_m_t_p_session.html#a0ea37f29d15abe24e843bc8b25452f6c">connect:password:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">認証接続を開始する。  <a href="#a0ea37f29d15abe24e843bc8b25452f6c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_f_r_s_m_t_p_session.html#a0b7281e6ef7948013b4c2caf9bf51b70">connect:accountName:password:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">認証接続を開始する。  <a href="#a0b7281e6ef7948013b4c2caf9bf51b70"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_f_r_s_m_t_p_session.html#a40c55fee28a579949f60ff5e7b53f15a">sendMailMessage:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">指定されたメールメッセージを送信する。  <a href="#a40c55fee28a579949f60ff5e7b53f15a"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+Static Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_f_r_s_m_t_p_session.html">FRSMTPSession</a> *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_f_r_s_m_t_p_session.html#aeb03eb8e94b3479d484866828d3d0007">smtpWithConnectionInfo:hostAddress:portNo:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">認証情報以外の接続情報を指定して一時インスタンスとして初期化を行う。  <a href="#aeb03eb8e94b3479d484866828d3d0007"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="properties"></a>
+プロパティ</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_f_r_s_m_t_p_session.html#aadcd73e4c6d37ed2aee72e97a8588def">hostAddress</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">接続先ホストアドレス  <a href="#aadcd73e4c6d37ed2aee72e97a8588def"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_f_r_s_m_t_p_session.html#a9834f1f32aed8f675baea648aed36467">portNo</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">ポート番号  <a href="#a9834f1f32aed8f675baea648aed36467"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_f_r_s_m_t_p_session_8h.html#ab58d6af3c049a1b80f9e1daa97c2fbbe">FRSMTPConnectionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_f_r_s_m_t_p_session.html#a1a5f7b3bc11af7cd254791e07690575c">connectionType</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">接続種別  <a href="#a1a5f7b3bc11af7cd254791e07690575c"></a><br/></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>説明</h2>
+<div class="textblock"><p>SMTPセッションクラス。 </p>
+<dl class="author"><dt><b>作者:</b></dt><dd>Kou </dd></dl>
+</div><hr/><h2>関数</h2>
+<a class="anchor" id="abce1e3496098bb0ed5b5313a4ece967e"></a><!-- doxytag: member="FRSMTPSession::connect" ref="abce1e3496098bb0ed5b5313a4ece967e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) connect </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>接続を開始する。 </p>
+<p>認証なしで接続を開始する。</p>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>接続に成功した場合は true </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0b7281e6ef7948013b4c2caf9bf51b70"></a><!-- doxytag: member="FRSMTPSession::connect:accountName:password:" ref="a0b7281e6ef7948013b4c2caf9bf51b70" args="(FRMailAuthType authType,[accountName] NSString *accountName,[password] NSString *password)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) connect: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_f_r_mail_type_8h.html#a802e62fb4d6e3e178169fc2405e3c678">FRMailAuthType</a>)&#160;</td>
+          <td class="paramname"><em>authType</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">accountName:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>accountName</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">password:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>password</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>認証接続を開始する。 </p>
+<p>指定された認証種別で接続を開始する。</p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">authType</td><td>認証種別 </td></tr>
+    <tr><td class="paramname">accountName</td><td>アカウント名 </td></tr>
+    <tr><td class="paramname">password</td><td>パスワード </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>接続に成功した場合は true </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0ea37f29d15abe24e843bc8b25452f6c"></a><!-- doxytag: member="FRSMTPSession::connect:password:" ref="a0ea37f29d15abe24e843bc8b25452f6c" args="(NSString *accountName,[password] NSString *password)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) connect: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>accountName</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">password:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>password</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>認証接続を開始する。 </p>
+<p>PLAIN認証で接続を開始する。</p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">accountName</td><td>アカウント名 </td></tr>
+    <tr><td class="paramname">password</td><td>パスワード </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>接続に成功した場合は true </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aaa9b8f4d557320abda487eea283f76c5"></a><!-- doxytag: member="FRSMTPSession::initWithConnectionInfo:hostAddress:portNo:" ref="aaa9b8f4d557320abda487eea283f76c5" args="(FRSMTPConnectionType type,[hostAddress] NSString *hostAddress,[portNo] int portNo)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_f_r_s_m_t_p_session.html">FRSMTPSession</a> *) initWithConnectionInfo: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_f_r_s_m_t_p_session_8h.html#ab58d6af3c049a1b80f9e1daa97c2fbbe">FRSMTPConnectionType</a>)&#160;</td>
+          <td class="paramname"><em>connectionType</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">hostAddress:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>hostAddress</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">portNo:</td>
+          <td></td>
+          <td class="paramtype">(int)&#160;</td>
+          <td class="paramname"><em>portNo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>認証情報以外の接続情報を指定して初期化を行う。 </p>
+<p>指定アドレスに対して接続処理を行う。</p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">connectionType</td><td>接続種別 </td></tr>
+    <tr><td class="paramname">hostAddress</td><td>接続先ホストアドレス </td></tr>
+    <tr><td class="paramname">portNo</td><td>接続先ポート番号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>作成したインスタンス</dd></dl>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">connectionType</td><td>接続種別 </td></tr>
+    <tr><td class="paramname">hostAddress</td><td>接続先ホストアドレス </td></tr>
+    <tr><td class="paramname">portNo</td><td>接続先ポート番号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>接続開始に成功した場合は true </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a40c55fee28a579949f60ff5e7b53f15a"></a><!-- doxytag: member="FRSMTPSession::sendMailMessage:" ref="a40c55fee28a579949f60ff5e7b53f15a" args="(FRMailMessage *mailMessage)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) sendMailMessage: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_f_r_mail_message.html">FRMailMessage</a>*)&#160;</td>
+          <td class="paramname"><em>mailMessage</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>指定されたメールメッセージを送信する。 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mailMessage</td><td>送信するメールメッセージ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>送信に成功した場合は true </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aeb03eb8e94b3479d484866828d3d0007"></a><!-- doxytag: member="FRSMTPSession::smtpWithConnectionInfo:hostAddress:portNo:" ref="aeb03eb8e94b3479d484866828d3d0007" args="(FRSMTPConnectionType connectionType,[hostAddress] NSString *hostAddress,[portNo] int portNo)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (<a class="el" href="interface_f_r_s_m_t_p_session.html">FRSMTPSession</a> *) smtpWithConnectionInfo: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_f_r_s_m_t_p_session_8h.html#ab58d6af3c049a1b80f9e1daa97c2fbbe">FRSMTPConnectionType</a>)&#160;</td>
+          <td class="paramname"><em>connectionType</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">hostAddress:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>hostAddress</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">portNo:</td>
+          <td></td>
+          <td class="paramtype">(int)&#160;</td>
+          <td class="paramname"><em>portNo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>認証情報以外の接続情報を指定して一時インスタンスとして初期化を行う。 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">connectionType</td><td>接続種別 </td></tr>
+    <tr><td class="paramname">hostAddress</td><td>接続先ホストアドレス </td></tr>
+    <tr><td class="paramname">portNo</td><td>接続先ポート番号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>作成した一時インスタンス </dd></dl>
+
+</div>
+</div>
+<hr/><h2>プロパティ</h2>
+<a class="anchor" id="a1a5f7b3bc11af7cd254791e07690575c"></a><!-- doxytag: member="FRSMTPSession::connectionType" ref="a1a5f7b3bc11af7cd254791e07690575c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="_f_r_s_m_t_p_session_8h.html#ab58d6af3c049a1b80f9e1daa97c2fbbe">FRSMTPConnectionType</a>) connectionType<code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>接続種別 </p>
+
+</div>
+</div>
+<a class="anchor" id="aadcd73e4c6d37ed2aee72e97a8588def"></a><!-- doxytag: member="FRSMTPSession::hostAddress" ref="aadcd73e4c6d37ed2aee72e97a8588def" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSString*) hostAddress<code> [read, write, copy]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>接続先ホストアドレス </p>
+
+</div>
+</div>
+<a class="anchor" id="a9834f1f32aed8f675baea648aed36467"></a><!-- doxytag: member="FRSMTPSession::portNo" ref="a9834f1f32aed8f675baea648aed36467" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) portNo<code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>ポート番号 </p>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>Classes/<a class="el" href="_f_r_s_m_t_p_session_8h_source.html">FRSMTPSession.h</a></li>
+<li>Classes/<a class="el" href="_f_r_s_m_t_p_session_8m.html">FRSMTPSession.m</a></li>
+</ul>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>データ構造</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>プロパティ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>FrontierMailに対してTue Jul 26 2011 03:18:34に生成されました。&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
+</body>
+</html>

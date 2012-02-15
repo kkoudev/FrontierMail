@@ -1,0 +1,409 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>FrontierMail: クラス FRMailMessage</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.7.4 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">FrontierMail</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>データ構造</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li><a href="classes.html"><span>データ構造索引</span></a></li>
+      <li><a href="functions.html"><span>データフィールド</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public メソッド</a> &#124;
+<a href="#pub-static-methods">Static Public メソッド</a> &#124;
+<a href="#properties">プロパティ</a>  </div>
+  <div class="headertitle">
+<div class="title">クラス FRMailMessage</div>  </div>
+</div>
+<div class="contents">
+<!-- doxytag: class="FRMailMessage" -->
+<p>メールメッセージデータクラス。  
+ <a href="interface_f_r_mail_message.html#details">[詳細]</a></p>
+
+<p><code>#import &lt;<a class="el" href="_f_r_mail_message_8h_source.html">FRMailMessage.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_f_r_mail_message.html#a02a5312faad788b37ad604ad40f91653">addToAddress:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">TOアドレスを追加する。  <a href="#a02a5312faad788b37ad604ad40f91653"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_f_r_mail_message.html#ad1c836dbb3efb7bf21cc85f969590479">addCcAddress:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">CCアドレスを追加する。  <a href="#ad1c836dbb3efb7bf21cc85f969590479"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_f_r_mail_message.html#afe78402cc9c9b51e94d7a6523df326af">addBccAddress:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">BCCアドレスを追加する。  <a href="#afe78402cc9c9b51e94d7a6523df326af"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(NSEnumerator *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_f_r_mail_message.html#abad3108f3919cfdfcc1c61344ba9904f">enumeratorToAddresses</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">TOアドレス一覧へアクセスするための列挙子を取得する。  <a href="#abad3108f3919cfdfcc1c61344ba9904f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(NSEnumerator *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_f_r_mail_message.html#aee9fcc9e079bde5df343b5e1e6da03e8">enumeratorCcAddresses</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">CCアドレス一覧へアクセスするための列挙子を取得する。  <a href="#aee9fcc9e079bde5df343b5e1e6da03e8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(NSEnumerator *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_f_r_mail_message.html#a803cfd49db551de97edda9071872533a">enumeratorBccAddresses</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">BCCアドレス一覧へアクセスするための列挙子を取得する。  <a href="#a803cfd49db551de97edda9071872533a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_f_r_mail_message.html#aeda05f31cbb4e9dfda7e4121abc549a4">addReplyToAddress:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">ReplyToアドレスを追加する。  <a href="#aeda05f31cbb4e9dfda7e4121abc549a4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(NSString *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_f_r_mail_message.html#a5a557ed28cb713f4d37a47776a34fd12">stringMime</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">MIME情報文字列を取得する。  <a href="#a5a557ed28cb713f4d37a47776a34fd12"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+Static Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_f_r_mail_message.html">FRMailMessage</a> *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_f_r_mail_message.html#a7d8adf9a01bb0fba4e21f250ba40d820">mailMessage</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">メールメッセージを一時インスタンスとして作成する。  <a href="#a7d8adf9a01bb0fba4e21f250ba40d820"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="properties"></a>
+プロパティ</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_f_r_mail_address.html">FRMailAddress</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_f_r_mail_message.html#a9c399921a2727f777c3e7604b3049296">fromAddress</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">FROMアドレス  <a href="#a9c399921a2727f777c3e7604b3049296"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">NSDate *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_f_r_mail_message.html#ab0ee72c453562358d73c3439c9a082b2">sentDate</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">送信日時  <a href="#ab0ee72c453562358d73c3439c9a082b2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">NSDate *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_f_r_mail_message.html#a4f919a3ea3b28ffa87c29c1888ef237e">receivedDate</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">受信日時  <a href="#a4f919a3ea3b28ffa87c29c1888ef237e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_f_r_mail_message.html#a88b8e0eb521d397e591a2fc1bbfacb8f">subject</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">メールの件名  <a href="#a88b8e0eb521d397e591a2fc1bbfacb8f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_f_r_mime_part.html">FRMimePart</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_f_r_mail_message.html#abfb7a3760f3150d62f2fb445a33a5d7d">mimePart</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">メールのMIMEパーツデータ  <a href="#abfb7a3760f3150d62f2fb445a33a5d7d"></a><br/></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>説明</h2>
+<div class="textblock"><p>メールメッセージデータクラス。 </p>
+<dl class="author"><dt><b>作者:</b></dt><dd>Kou </dd></dl>
+</div><hr/><h2>関数</h2>
+<a class="anchor" id="afe78402cc9c9b51e94d7a6523df326af"></a><!-- doxytag: member="FRMailMessage::addBccAddress:" ref="afe78402cc9c9b51e94d7a6523df326af" args="(FRMailAddress *address)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) addBccAddress: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_f_r_mail_address.html">FRMailAddress</a>*)&#160;</td>
+          <td class="paramname"><em>address</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>BCCアドレスを追加する。 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>追加するBCCアドレス </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad1c836dbb3efb7bf21cc85f969590479"></a><!-- doxytag: member="FRMailMessage::addCcAddress:" ref="ad1c836dbb3efb7bf21cc85f969590479" args="(FRMailAddress *address)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) addCcAddress: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_f_r_mail_address.html">FRMailAddress</a>*)&#160;</td>
+          <td class="paramname"><em>address</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>CCアドレスを追加する。 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>追加するCCアドレス </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aeda05f31cbb4e9dfda7e4121abc549a4"></a><!-- doxytag: member="FRMailMessage::addReplyToAddress:" ref="aeda05f31cbb4e9dfda7e4121abc549a4" args="(FRMailAddress *address)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) addReplyToAddress: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_f_r_mail_address.html">FRMailAddress</a>*)&#160;</td>
+          <td class="paramname"><em>address</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>ReplyToアドレスを追加する。 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>追加するReplyToアドレス </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a02a5312faad788b37ad604ad40f91653"></a><!-- doxytag: member="FRMailMessage::addToAddress:" ref="a02a5312faad788b37ad604ad40f91653" args="(FRMailAddress *address)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) addToAddress: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_f_r_mail_address.html">FRMailAddress</a>*)&#160;</td>
+          <td class="paramname"><em>address</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>TOアドレスを追加する。 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>追加するTOアドレス </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a803cfd49db551de97edda9071872533a"></a><!-- doxytag: member="FRMailMessage::enumeratorBccAddresses" ref="a803cfd49db551de97edda9071872533a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSEnumerator *) enumeratorBccAddresses </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>BCCアドレス一覧へアクセスするための列挙子を取得する。 </p>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>BCCアドレス一覧へアクセスするための列挙子 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aee9fcc9e079bde5df343b5e1e6da03e8"></a><!-- doxytag: member="FRMailMessage::enumeratorCcAddresses" ref="aee9fcc9e079bde5df343b5e1e6da03e8" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSEnumerator *) enumeratorCcAddresses </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>CCアドレス一覧へアクセスするための列挙子を取得する。 </p>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>CCアドレス一覧へアクセスするための列挙子 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abad3108f3919cfdfcc1c61344ba9904f"></a><!-- doxytag: member="FRMailMessage::enumeratorToAddresses" ref="abad3108f3919cfdfcc1c61344ba9904f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSEnumerator *) enumeratorToAddresses </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>TOアドレス一覧へアクセスするための列挙子を取得する。 </p>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>TOアドレス一覧へアクセスするための列挙子 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7d8adf9a01bb0fba4e21f250ba40d820"></a><!-- doxytag: member="FRMailMessage::mailMessage" ref="a7d8adf9a01bb0fba4e21f250ba40d820" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (<a class="el" href="interface_f_r_mail_message.html">FRMailMessage</a> *) mailMessage </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>メールメッセージを一時インスタンスとして作成する。 </p>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>作成した一時インスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5a557ed28cb713f4d37a47776a34fd12"></a><!-- doxytag: member="FRMailMessage::stringMime" ref="a5a557ed28cb713f4d37a47776a34fd12" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSString *) stringMime </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>MIME情報文字列を取得する。 </p>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>MIME情報文字列</dd>
+<dd>
+MIME情報文字列。MIMEパーツデータがない場合は nil </dd></dl>
+
+</div>
+</div>
+<hr/><h2>プロパティ</h2>
+<a class="anchor" id="a9c399921a2727f777c3e7604b3049296"></a><!-- doxytag: member="FRMailMessage::fromAddress" ref="a9c399921a2727f777c3e7604b3049296" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_f_r_mail_address.html">FRMailAddress</a>*) fromAddress<code> [read, write, retain]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>FROMアドレス </p>
+
+</div>
+</div>
+<a class="anchor" id="abfb7a3760f3150d62f2fb445a33a5d7d"></a><!-- doxytag: member="FRMailMessage::mimePart" ref="abfb7a3760f3150d62f2fb445a33a5d7d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_f_r_mime_part.html">FRMimePart</a>*) mimePart<code> [read, write, retain]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>メールのMIMEパーツデータ </p>
+
+</div>
+</div>
+<a class="anchor" id="a4f919a3ea3b28ffa87c29c1888ef237e"></a><!-- doxytag: member="FRMailMessage::receivedDate" ref="a4f919a3ea3b28ffa87c29c1888ef237e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSDate*) receivedDate<code> [read, write, copy]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>受信日時 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab0ee72c453562358d73c3439c9a082b2"></a><!-- doxytag: member="FRMailMessage::sentDate" ref="ab0ee72c453562358d73c3439c9a082b2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSDate*) sentDate<code> [read, write, copy]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>送信日時 </p>
+
+</div>
+</div>
+<a class="anchor" id="a88b8e0eb521d397e591a2fc1bbfacb8f"></a><!-- doxytag: member="FRMailMessage::subject" ref="a88b8e0eb521d397e591a2fc1bbfacb8f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSString*) subject<code> [read, write, copy]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>メールの件名 </p>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>Classes/<a class="el" href="_f_r_mail_message_8h_source.html">FRMailMessage.h</a></li>
+<li>Classes/<a class="el" href="_f_r_mail_message_8m.html">FRMailMessage.m</a></li>
+</ul>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>データ構造</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>プロパティ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>FrontierMailに対してTue Jul 26 2011 03:18:34に生成されました。&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
+</body>
+</html>

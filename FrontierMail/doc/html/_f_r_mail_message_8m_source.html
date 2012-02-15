@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>FrontierMail: Classes/FRMailMessage.m ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.7.4 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">FrontierMail</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>グローバル</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">Classes/FRMailMessage.m</div>  </div>
+</div>
+<div class="contents">
+<a href="_f_r_mail_message_8m.html">説明を見る。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
+<a name="l00002"></a>00002 <span class="comment">//  FRMailMessage.m</span>
+<a name="l00003"></a>00003 <span class="comment">//  FrontierMail</span>
+<a name="l00004"></a>00004 <span class="comment">//</span>
+<a name="l00005"></a>00005 <span class="comment">//  Created by Kou on 11/07/01.</span>
+<a name="l00006"></a>00006 <span class="comment">//  Copyright 2011 The Frontier Project. All rights reserved.</span>
+<a name="l00007"></a>00007 <span class="comment">//</span>
+<a name="l00008"></a>00008 
+<a name="l00009"></a>00009 <span class="preprocessor">#import &quot;FRMailDefine.h&quot;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#import &quot;<a class="code" href="_f_r_mail_message_8h.html">FRMailMessage.h</a>&quot;</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#import &quot;FRMailUtils.h&quot;</span>
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013 
+<a name="l00014"></a>00014 <span class="comment">/*</span>
+<a name="l00015"></a>00015 <span class="comment"> * メールメッセージデータクラス実装部</span>
+<a name="l00016"></a>00016 <span class="comment"> */</span>
+<a name="l00017"></a>00017 <span class="keyword">@implementation </span><a class="code" href="interface_f_r_mail_message.html" title="メールメッセージデータクラス。">FRMailMessage</a>
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020 <span class="comment">/*</span>
+<a name="l00021"></a>00021 <span class="comment"> * アクセサメソッドを定義する</span>
+<a name="l00022"></a>00022 <span class="comment"> */</span>
+<a name="l00023"></a>00023 <span class="keyword">@synthesize</span> <a class="code" href="interface_f_r_mail_message.html#a9c399921a2727f777c3e7604b3049296">fromAddress</a>     = mFromAddress;
+<a name="l00024"></a>00024 <span class="keyword">@synthesize</span> <a class="code" href="interface_f_r_mail_message.html#ab0ee72c453562358d73c3439c9a082b2">sentDate</a>        = mSentDate;
+<a name="l00025"></a>00025 <span class="keyword">@synthesize</span> <a class="code" href="interface_f_r_mail_message.html#a4f919a3ea3b28ffa87c29c1888ef237e">receivedDate</a>    = mReceivedDate;
+<a name="l00026"></a>00026 <span class="keyword">@synthesize</span> <a class="code" href="interface_f_r_mail_message.html#a88b8e0eb521d397e591a2fc1bbfacb8f">subject</a>         = mSubject;
+<a name="l00027"></a>00027 <span class="keyword">@synthesize</span> <a class="code" href="interface_f_r_mail_message.html#abfb7a3760f3150d62f2fb445a33a5d7d">mimePart</a>        = mMimePart;
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031 
+<a name="l00037"></a>00037 - (id)init {
+<a name="l00038"></a>00038     
+<a name="l00039"></a>00039     <span class="comment">// インスタンスを生成する</span>
+<a name="l00040"></a>00040     <span class="keyword">self</span> = [<span class="keyword">super</span> init];
+<a name="l00041"></a>00041     
+<a name="l00042"></a>00042     <span class="comment">// インスタンスが生成できた場合</span>
+<a name="l00043"></a>00043     <span class="keywordflow">if</span> (<span class="keyword">self</span>) {
+<a name="l00044"></a>00044         
+<a name="l00045"></a>00045         <span class="comment">// 各メンバ変数を初期化する</span>
+<a name="l00046"></a>00046         mToAddresses    = [[NSMutableArray alloc] init];
+<a name="l00047"></a>00047         mCcAddresses    = [[NSMutableArray alloc] init];
+<a name="l00048"></a>00048         mBccAddresses   = [[NSMutableArray alloc] init];
+<a name="l00049"></a>00049         
+<a name="l00050"></a>00050     }
+<a name="l00051"></a>00051 
+<a name="l00052"></a>00052     <span class="comment">// 作成したインスタンスを返す</span>
+<a name="l00053"></a>00053     <span class="keywordflow">return</span> <span class="keyword">self</span>;
+<a name="l00054"></a>00054     
+<a name="l00055"></a>00055 }
+<a name="l00056"></a>00056 
+<a name="l00057"></a>00057 
+<a name="l00062"></a>00062 - (void)dealloc {
+<a name="l00063"></a>00063 
+<a name="l00064"></a>00064     <span class="comment">// 各変数を解放する</span>
+<a name="l00065"></a>00065     [mFromAddress release];
+<a name="l00066"></a>00066     [mToAddresses release];
+<a name="l00067"></a>00067     [mCcAddresses release];
+<a name="l00068"></a>00068     [mBccAddresses release];
+<a name="l00069"></a>00069     [mSentDate release];
+<a name="l00070"></a>00070     [mReceivedDate release];
+<a name="l00071"></a>00071     [mSubject release];
+<a name="l00072"></a>00072     [mMimePart release];
+<a name="l00073"></a>00073     
+<a name="l00074"></a>00074     <span class="comment">// スーパークラスの解放処理を実行する</span>
+<a name="l00075"></a>00075     [<span class="keyword">super</span> dealloc];
+<a name="l00076"></a>00076     
+<a name="l00077"></a>00077 }
+<a name="l00078"></a>00078 
+<a name="l00079"></a>00079 
+<a name="l00085"></a><a class="code" href="interface_f_r_mail_message.html#a7d8adf9a01bb0fba4e21f250ba40d820">00085</a> + (<a class="code" href="interface_f_r_mail_message.html" title="メールメッセージデータクラス。">FRMailMessage</a>*)<a class="code" href="interface_f_r_mail_message.html#a7d8adf9a01bb0fba4e21f250ba40d820" title="メールメッセージを一時インスタンスとして作成する。">mailMessage</a> {
+<a name="l00086"></a>00086     
+<a name="l00087"></a>00087     <span class="keywordflow">return</span> [[[<a class="code" href="interface_f_r_mail_message.html" title="メールメッセージデータクラス。">FRMailMessage</a> alloc] init] autorelease];
+<a name="l00088"></a>00088     
+<a name="l00089"></a>00089 }
+<a name="l00090"></a>00090 
+<a name="l00091"></a>00091 
+<a name="l00097"></a><a class="code" href="interface_f_r_mail_message.html#a02a5312faad788b37ad604ad40f91653">00097</a> - (void)addToAddress:(<a class="code" href="interface_f_r_mail_address.html" title="メールアドレス情報。">FRMailAddress</a>*)address {
+<a name="l00098"></a>00098     
+<a name="l00099"></a>00099     <span class="comment">// アドレスが nil の場合はアサート</span>
+<a name="l00100"></a>00100     NSAssert(address != nil, <span class="stringliteral">@&quot;The argument is nil.&quot;</span>);
+<a name="l00101"></a>00101     
+<a name="l00102"></a>00102     <span class="comment">// アドレスをTOアドレス一覧へ追加する</span>
+<a name="l00103"></a>00103     [mToAddresses addObject:address];
+<a name="l00104"></a>00104     
+<a name="l00105"></a>00105 }
+<a name="l00106"></a>00106 
+<a name="l00107"></a>00107 
+<a name="l00113"></a><a class="code" href="interface_f_r_mail_message.html#ad1c836dbb3efb7bf21cc85f969590479">00113</a> - (void)addCcAddress:(<a class="code" href="interface_f_r_mail_address.html" title="メールアドレス情報。">FRMailAddress</a>*)address {
+<a name="l00114"></a>00114     
+<a name="l00115"></a>00115     <span class="comment">// アドレスが nil の場合はアサート</span>
+<a name="l00116"></a>00116     NSAssert(address != nil, <span class="stringliteral">@&quot;The argument is nil.&quot;</span>);
+<a name="l00117"></a>00117     
+<a name="l00118"></a>00118     <span class="comment">// アドレスをCCアドレス一覧へ追加する</span>
+<a name="l00119"></a>00119     [mCcAddresses addObject:address];
+<a name="l00120"></a>00120     
+<a name="l00121"></a>00121 }
+<a name="l00122"></a>00122 
+<a name="l00123"></a>00123 
+<a name="l00129"></a><a class="code" href="interface_f_r_mail_message.html#afe78402cc9c9b51e94d7a6523df326af">00129</a> - (void)addBccAddress:(<a class="code" href="interface_f_r_mail_address.html" title="メールアドレス情報。">FRMailAddress</a>*)address {
+<a name="l00130"></a>00130     
+<a name="l00131"></a>00131     <span class="comment">// アドレスが nil の場合はアサート</span>
+<a name="l00132"></a>00132     NSAssert(address != nil, <span class="stringliteral">@&quot;The argument is nil.&quot;</span>);
+<a name="l00133"></a>00133     
+<a name="l00134"></a>00134     <span class="comment">// アドレスをBCCアドレス一覧へ追加する</span>
+<a name="l00135"></a>00135     [mBccAddresses addObject:address];
+<a name="l00136"></a>00136     
+<a name="l00137"></a>00137 }
+<a name="l00138"></a>00138 
+<a name="l00139"></a>00139 
+<a name="l00145"></a><a class="code" href="interface_f_r_mail_message.html#abad3108f3919cfdfcc1c61344ba9904f">00145</a> - (NSEnumerator*)<a class="code" href="interface_f_r_mail_message.html#abad3108f3919cfdfcc1c61344ba9904f" title="TOアドレス一覧へアクセスするための列挙子を取得する。">enumeratorToAddresses</a> {
+<a name="l00146"></a>00146     
+<a name="l00147"></a>00147     <span class="keywordflow">return</span> [mToAddresses objectEnumerator];
+<a name="l00148"></a>00148     
+<a name="l00149"></a>00149 }
+<a name="l00150"></a>00150 
+<a name="l00151"></a>00151 
+<a name="l00157"></a><a class="code" href="interface_f_r_mail_message.html#aee9fcc9e079bde5df343b5e1e6da03e8">00157</a> - (NSEnumerator*)<a class="code" href="interface_f_r_mail_message.html#aee9fcc9e079bde5df343b5e1e6da03e8" title="CCアドレス一覧へアクセスするための列挙子を取得する。">enumeratorCcAddresses</a> {
+<a name="l00158"></a>00158     
+<a name="l00159"></a>00159     <span class="keywordflow">return</span> [mCcAddresses objectEnumerator];
+<a name="l00160"></a>00160     
+<a name="l00161"></a>00161 }
+<a name="l00162"></a>00162 
+<a name="l00163"></a>00163 
+<a name="l00169"></a><a class="code" href="interface_f_r_mail_message.html#a803cfd49db551de97edda9071872533a">00169</a> - (NSEnumerator*)<a class="code" href="interface_f_r_mail_message.html#a803cfd49db551de97edda9071872533a" title="BCCアドレス一覧へアクセスするための列挙子を取得する。">enumeratorBccAddresses</a> {
+<a name="l00170"></a>00170     
+<a name="l00171"></a>00171     <span class="keywordflow">return</span> [mBccAddresses objectEnumerator];
+<a name="l00172"></a>00172     
+<a name="l00173"></a>00173 }
+<a name="l00174"></a>00174 
+<a name="l00175"></a>00175 
+<a name="l00181"></a><a class="code" href="interface_f_r_mail_message.html#aeda05f31cbb4e9dfda7e4121abc549a4">00181</a> - (void)addReplyToAddress:(<a class="code" href="interface_f_r_mail_address.html" title="メールアドレス情報。">FRMailAddress</a>*)address {
+<a name="l00182"></a>00182     
+<a name="l00183"></a>00183     <span class="comment">// アドレスが nil の場合はアサート</span>
+<a name="l00184"></a>00184     NSAssert(address != nil, <span class="stringliteral">@&quot;The argument is nil.&quot;</span>);
+<a name="l00185"></a>00185     
+<a name="l00186"></a>00186     <span class="comment">// アドレスをReplyToアドレス一覧へ追加する</span>
+<a name="l00187"></a>00187     [mReplyToAddresses addObject:address];
+<a name="l00188"></a>00188     
+<a name="l00189"></a>00189 }
+<a name="l00190"></a>00190 
+<a name="l00191"></a>00191 
+<a name="l00197"></a><a class="code" href="interface_f_r_mail_message.html#a5a557ed28cb713f4d37a47776a34fd12">00197</a> - (NSString*)<a class="code" href="interface_f_r_mail_message.html#a5a557ed28cb713f4d37a47776a34fd12" title="MIME情報文字列を取得する。">stringMime</a> {
+<a name="l00198"></a>00198 
+<a name="l00199"></a>00199     <span class="comment">// 設定されているMIMEパーツのMIME情報を作成する</span>
+<a name="l00200"></a>00200     <span class="keyword">struct </span>mailmime*                mimeParts = [FRMailUtils initMimeWithMimePart:mMimePart];
+<a name="l00201"></a>00201     
+<a name="l00202"></a>00202     
+<a name="l00203"></a>00203     <span class="comment">// 各アドレス情報をIMFシングルフィールドへ設定する</span>
+<a name="l00204"></a>00204     <span class="keyword">struct </span>mailimf_mailbox_list*    fromAddresses    = [FRMailUtils initImfMailBoxListWithAddress:mFromAddress];
+<a name="l00205"></a>00205     <span class="keyword">struct </span>mailimf_address_list*    toAddresses      = [FRMailUtils initImfMailAddressListWithAddresses:mToAddresses];
+<a name="l00206"></a>00206     <span class="keyword">struct </span>mailimf_address_list*    ccAddresses      = [FRMailUtils initImfMailAddressListWithAddresses:mCcAddresses];
+<a name="l00207"></a>00207     <span class="keyword">struct </span>mailimf_address_list*    bccAddresses     = [FRMailUtils initImfMailAddressListWithAddresses:mBccAddresses];
+<a name="l00208"></a>00208     <span class="keyword">struct </span>mailimf_address_list*    replyToAddresses = [FRMailUtils initImfMailAddressListWithAddresses:mReplyToAddresses];
+<a name="l00209"></a>00209     <span class="keyword">const</span> <span class="keywordtype">char</span>*                     <a class="code" href="interface_f_r_mail_message.html#a88b8e0eb521d397e591a2fc1bbfacb8f">subject</a>          = [FRMailUtils cStringEncodingMimeHeader:mSubject];
+<a name="l00210"></a>00210  
+<a name="l00211"></a>00211     <span class="comment">// アドレス情報を格納したIMFフィールド情報を作成する</span>
+<a name="l00212"></a>00212     <span class="keyword">struct </span>mailimf_fields*  imfFields = mailimf_fields_new_with_data(
+<a name="l00213"></a>00213                                                                   fromAddresses, 
+<a name="l00214"></a>00214                                                                   NULL, 
+<a name="l00215"></a>00215                                                                   replyToAddresses, 
+<a name="l00216"></a>00216                                                                   toAddresses, 
+<a name="l00217"></a>00217                                                                   ccAddresses, 
+<a name="l00218"></a>00218                                                                   bccAddresses, 
+<a name="l00219"></a>00219                                                                   NULL, 
+<a name="l00220"></a>00220                                                                   NULL, 
+<a name="l00221"></a>00221                                                                   <a class="code" href="interface_f_r_mail_message.html#a88b8e0eb521d397e591a2fc1bbfacb8f">subject</a> == NULL ? NULL : strdup(<a class="code" href="interface_f_r_mail_message.html#a88b8e0eb521d397e591a2fc1bbfacb8f">subject</a>)
+<a name="l00222"></a>00222                                                                   );
+<a name="l00223"></a>00223  
+<a name="l00224"></a>00224     <span class="comment">// メッセージMIME情報を作成する</span>
+<a name="l00225"></a>00225     <span class="keyword">struct </span>mailmime*    mimeMessage = mailmime_new_message_data(mimeParts);
+<a name="l00226"></a>00226     
+<a name="l00227"></a>00227     <span class="comment">// IMFフィールド情報を設定する</span>
+<a name="l00228"></a>00228     mailmime_set_imf_fields(mimeMessage, imfFields);
+<a name="l00229"></a>00229     
+<a name="l00230"></a>00230     <span class="comment">// MIME情報文字列を作成する</span>
+<a name="l00231"></a>00231     NSString*           retMimeString = [FRMailUtils stringMimeByMimeInfo:mimeMessage];
+<a name="l00232"></a>00232     
+<a name="l00233"></a>00233     <span class="comment">// MIME情報を解放する</span>
+<a name="l00234"></a>00234     mailmime_free(mimeMessage);
+<a name="l00235"></a>00235 
+<a name="l00236"></a>00236     
+<a name="l00237"></a>00237     <span class="comment">// 作成したMIME情報文字列を返す</span>
+<a name="l00238"></a>00238     <span class="keywordflow">return</span> retMimeString;
+<a name="l00239"></a>00239     
+<a name="l00240"></a>00240 }
+<a name="l00241"></a>00241 
+<a name="l00242"></a>00242 
+<a name="l00243"></a>00243 
+<a name="l00244"></a>00244 <span class="keyword">@end</span>
+</pre></div></div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>データ構造</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>プロパティ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>FrontierMailに対してTue Jul 26 2011 02:58:43に生成されました。&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
+</body>
+</html>
