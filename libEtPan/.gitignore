@@ -4,7 +4,6 @@
 
 cat <<EOF > .gitignore
 # xcode noise
-*/build/*
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
 **/*.xcodeproj/*
