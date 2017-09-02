@@ -1,4 +1,4 @@
-【FrontierMailについて】
+# FrontierMailについて
 FrontierMailはiOSでメール機能を実装するためのライブラリです。
 AndroidにはJavaMailという高機能なメールライブラリがあるため
 簡単にメール機能をアプリケーションへ実装することが出来ますが、
@@ -9,14 +9,14 @@ iOSにおいては標準メーラーを介する機能しか用意されてい�
 JavaMailのように(またはそれ以上に)
 iOSにおいて簡単にメール機能を実装できることを目指したライブラリとなります。
 
-【利用可能な機能】
+## 利用可能な機能
 現バージョンでは以下の機能のみをサポートしています。
 今後、対応プロトコルを増やしていく予定です。
 
 ・SMTP送信
 ・MIMEパート作成 (ファイル添付、デコメールの構築も可能)
 
-【使い方】
+## 使い方
 FrontierMail/build/Debug-framework/FrontierMail.framework
 libEtPan/build-mac/build/Debug-framework/libetpan.framework
 
@@ -26,13 +26,10 @@ XcodeでFrameworkとして取り込んで下さい。
 
 #import <FrontierMail/FrontierMail.h>
 
-【ライセンスについて】
-本ライブラリは BSD License で配布しております。
-
-【詳しい使い方や問い合わせなど】
+## 詳しい使い方や問い合わせなど
 こちらのブログで使い方を随時記載しております。
 http://mobileapplication.blog.fc2.com/
 
+## [Changelog](CHANGELOG.md)
 
-【更新ヒストリ】
-2011/07/26　　v0.0.1	　　SMTP、MIMEパート作成サポートバージョンを公開
+## [License](LICENSE)
